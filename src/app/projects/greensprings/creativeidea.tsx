@@ -1,0 +1,68 @@
+"use client";
+
+import React from "react";
+
+export default function CreativeIdea() {
+  return (
+    <section className="w-full bg-[#0D0D0D] py-14 md:py-28 px-6 md:px-12">
+      
+      {/* SECTION TEXT */}
+      <div className="max-w-4xl mx-auto space-y-6 mb-20">
+        <h2 className="text-xl font-semibold text-white">
+          Creative Idea
+        </h2>
+
+        <p className="text-gray-300 leading-relaxed ">
+          For the school’s 40th anniversary, the task was to create a campaign 
+          video that would both honor its past and inspire its future. 
+          The concept, titled Evergreen, was designed to highlight the institution’s 
+          enduring legacy and the values that have remained constant over the decades. 
+          By choosing a spoken word format, the campaign tapped into the emotional power 
+          of storytelling, ensuring that the celebration felt authentic, memorable, and deeply connected to the school’s identity.
+
+        </p>
+
+        <p className="text-gray-300 leading-relaxed">
+          The creative execution centered on current students, whose voices became 
+          the bridge between generations. Through their words, the video brought to 
+          life the rich history of the school, weaving together moments of tradition, 
+          achievement, and community spirit. This approach not only showcased the timeless 
+          values that define the institution but also emphasized its lasting impact across 
+          generations, positioning the school as a place where heritage and progress coexist seamlessly.
+        </p>
+      </div>
+
+      {/* IMAGE GRID */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-28">
+        <img src="/greensprings/img1.jpg" alt="Creative Idea Image" className="w-full object-cover" />
+        <img src="/greensprings/img2.jpg" alt="Creative Idea Image" className="w-full object-cover" />
+        <img src="/greensprings/img3.jpg" alt="Creative Idea Image" className="w-full object-cover" />
+        <img src="/greensprings/img4.jpg" alt="Creative Idea Image" className="w-full object-cover" />
+        <img src="/greensprings/img5.jpg" alt="Creative Idea Image" className="w-full object-cover" />
+        <img src="/greensprings/img6.jpg" alt="Creative Idea Image" className="w-full object-cover" />
+      </div>
+
+      {/* METRICS SECTION */}
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-12">
+        {/* Impressions */}
+        <div>
+          <p className="text-white text-base mb-2">Impressions</p>
+          <p className="text-[#CC111A] text-3xl font-semibold">56 M+</p>
+        </div>
+
+        {/* Reach */}
+        <div>
+          <p className="text-white text-base mb-2">Reach</p>
+          <p className="text-[#CC111A] text-3xl font-semibold">11 M+</p>
+        </div>
+
+        {/* Views / Plays */}
+        <div>
+          <p className="text-white text-base mb-2">Views/Plays</p>
+          <p className="text-[#CC111A] text-3xl font-semibold">1.8 M</p>
+        </div>
+      </div>
+
+    </section>
+  );
+}
