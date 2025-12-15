@@ -7,7 +7,7 @@ import { useState } from "react";
 const works = [
   {
     title: "Golden Morn",
-    image: "/work/golden-more.png",
+    image: "/work/golden-more.webp",
     link: "/projects/golden-morn",
   },
   {
@@ -28,7 +28,7 @@ const works = [
   {
     title: "Ribena",
     image: "/work/ribena.png",
-    link: "/work/molecule",
+    link: "/projects/ribena",
   },
   {
     title: "Greensprings",

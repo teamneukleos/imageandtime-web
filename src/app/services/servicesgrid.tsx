@@ -3,6 +3,7 @@
 export default function ServicesGrid() {
   const services = [
     {
+      id: "branding",
       title: "BRANDING & VISUAL IDENTITY",
       desc: "We help ambitious brands craft remarkable identities, create effective advertising and conceive memorable experiences that connect people to their products and services.",
       items: [
@@ -15,6 +16,7 @@ export default function ServicesGrid() {
       ],
     },
     {
+      id: "digital-media",
       title: "DIGITAL MEDIA MARKETING",
       desc: "We help ambitious brands craft remarkable identities, create effective advertising and conceive memorable experiences that connect people to their products and services.",
       items: [
@@ -27,7 +29,8 @@ export default function ServicesGrid() {
       ],
     },
     {
-      title: "BRANDING AND VISUAL IDENTITY",
+      id: "experience",
+      title: "EXPERIENCE DESIGN",
       desc: "We help ambitious brands craft remarkable identities, create effective advertising and conceive memorable experiences that connect people to their products and services.",
       items: [
         "Brand Strategy",
@@ -39,6 +42,7 @@ export default function ServicesGrid() {
       ],
     },
     {
+      id: "atl-btl",
       title: "ATL & BTL DESIGN",
       desc: "We help ambitious brands craft remarkable identities, create effective advertising and conceive memorable experiences that connect people to their products and services.",
       items: [
@@ -75,10 +79,11 @@ export default function ServicesGrid() {
     <div className="w-full flex justify-center px-4 md:px-8 py-20 bg-[#111111]">
       <div className="w-full max-w-6xl space-y-16">
 
-        {services.map((service, index) => (
+        {services.map((service) => (
           <div
-            key={index}
-            className="grid grid-cols-1 md:grid-cols-2 gap-12"
+            key={service.id}
+            id={service.id}
+            className="grid grid-cols-1 md:grid-cols-2 gap-12 scroll-mt-24"
           >
             {/* LEFT SIDE — TEXT */}
             <div>

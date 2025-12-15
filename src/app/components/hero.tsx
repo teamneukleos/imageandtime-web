@@ -43,12 +43,12 @@ const Hero = () => {
 
   return (
     <section
-      className="
-        relative w-full h-[150vh]
-        flex flex-col items-center justify-center
-        text-white text-center px-6 overflow-hidden
-      "
-    >
+  className="
+    relative w-full min-h-screen md:min-h-[150vh]
+    flex flex-col items-center justify-center
+    text-white text-center px-6 overflow-hidden
+  "
+>
       {/* BACKGROUND SLIDING */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <AnimatePresence mode="popLayout">
@@ -85,7 +85,7 @@ const Hero = () => {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -50, opacity: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-[30vh]"
+          className="mt-[10vh] md:mt-[30vh]"
         >
           <h1 className="text-2xl md:text-4xl font-semibold flex items-center justify-center gap-3">
             <span>{slide.titleLeft}</span>
