@@ -7,45 +7,27 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
   {
     image: "/images/hero-bg.jpg",
-    titleLeft: "Design",
-    titleRight: "Culture",
-    subtitle:
-      "We design brands, not just campaigns.",
+    subtitle: "We design brands, not just campaigns.",
   },
   {
     image: "/images/herobg-2.png",
-    titleLeft: "Innovation",
-    titleRight: "Transformation",
-    subtitle:
-      "We don’t only make ads that don’t feel like ads.",
+    subtitle: "We don't only make ads that don't feel like ads.",
   },
   {
     image: "/images/herobg3.png",
-    titleLeft: "Strategy",
-    titleRight: "Insight",
-    subtitle:
-      "We build brands people recognise, trust, and want to belong to.",
+    subtitle: "We build brands people recognise, trust, and want to belong to.",
   },
   {
     image: "/images/herobg-4.jpg",
-    titleLeft: "Strategy",
-    titleRight: "Insight",
-    subtitle:
-      "And we design experiences that make organisations feel human again.",
+    subtitle: "And we design experiences that make organisations feel human again.",
   },
   {
-    image: "/images/herobg-5.jpg",
-    titleLeft: "Strategy",
-    titleRight: "Insight",
-    subtitle:
-      "Because humans are not creatures of logic. They are creatures of emotion.",
+    image: "/images/hero-bg-5.jpg",
+    subtitle: "Because humans are not creatures of logic. They are creatures of emotion.",
   },
   {
-    image: "/images/herobg-6.png",
-    titleLeft: "Strategy",
-    titleRight: "Insight",
-    subtitle:
-      "Whether we’re building a brand, a product, or a workplace culture, we always start with one question: What do you want people to feel?",
+    image: "/images/hero-bg-6.png",
+    subtitle: "Whether we're building a brand, a product, or a workplace culture, we always start with one question: What do you want people to feel?",
   },
 ];
 
@@ -64,12 +46,12 @@ const Hero = () => {
 
   return (
     <section
-  className="
-    relative w-full min-h-screen md:min-h-[100vh]
-    flex flex-col items-center justify-center
-    text-white text-center px-6 overflow-hidden
-  "
->
+      className="
+        relative w-full min-h-screen md:min-h-[100vh]
+        flex flex-col items-center justify-center
+        text-white text-center px-6 overflow-hidden
+      "
+    >
       {/* BACKGROUND SLIDING */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <AnimatePresence mode="popLayout">
@@ -98,7 +80,7 @@ const Hero = () => {
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
-      {/* CONTENT SLIDE LEFT */}
+      {/* CONTENT SLIDE */}
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
@@ -108,21 +90,9 @@ const Hero = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mt-[10vh] md:mt-[30vh]"
         >
-          <h1 className="text-2xl md:text-4xl font-semibold flex items-center justify-center gap-3">
-            <span>{slide.titleLeft}</span>
-            <Image
-              src="/logo/and-logo.svg"
-              alt="Ampersand Logo"
-              width={50}
-              height={50}
-              className="w-8 md:w-12"
-            />
-            <span>{slide.titleRight}</span>
-          </h1>
-
-          <p className="mt-6 max-w-2xl mx-auto text-gray-300 text-sm md:text-xl leading-relaxed">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold max-w-4xl mx-auto leading-tight">
             {slide.subtitle}
-          </p>
+          </h1>
         </motion.div>
       </AnimatePresence>
     </section>

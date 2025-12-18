@@ -6,17 +6,17 @@ import Link from "next/link";
 const services = [
   {
     title: "Advertising & Marketing",
-    image: "/services/Branding.png",
+    image: "/services/advertising.png",
     link: "/advertising",
   },
   {
     title: "Brand Identity & Product design",
-    image: "/services/Atl-btl.png",
+    image: "/services/brand-identity.png",
     link: "/brand-identity",
   },
   {
     title: "Experience design & Culture Transformation",
-    image: "/services/digital-media.png",
+    image: "/services/experience-design.png",
     link: "/experience-design",
   },
 ];
