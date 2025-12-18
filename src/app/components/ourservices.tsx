@@ -5,40 +5,39 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Branding & Visual Identity",
+    title: "Advertising & Marketing",
     image: "/services/Branding.png",
-    link: "/services#branding",
+    link: "/advertising",
   },
   {
-    title: "ATL & BTL Design",
+    title: "Brand Identity & Product design",
     image: "/services/Atl-btl.png",
-    link: "/services#atl-btl",
+    link: "/brand-identity",
   },
   {
-    title: "Digital Media marketing",
+    title: "Experience design & Culture Transformation",
     image: "/services/digital-media.png",
-    link: "/services#digital-media",
-  },
-  {
-    title: "Experience design",
-    image: "/services/experience.png",
-    link: "/services#experience",
+    link: "/experience-design",
   },
 ];
 
 const OurServices = () => {
   return (
     <section className="w-full px-6 md:px-14 lg:px-24 py-20 bg-[#111111] text-white">
+      
       {/* Title */}
-      <h2 className="text-3xl md:text-4xl font-semibold mb-10">Services</h2>
+      <h2 className="text-3xl md:text-4xl font-semibold mb-10">
+        Services
+      </h2>
 
       {/* GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <div
             key={index}
             className="
-              relative w-full h-[260px] md:h-[320px] rounded-2xl overflow-hidden
+              relative w-full h-[240px] md:h-[280px]
+              rounded-2xl overflow-hidden
               group transition cursor-pointer
             "
           >
@@ -51,7 +50,7 @@ const OurServices = () => {
             />
 
             {/* Dark Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
             {/* TEXT + ARROW BUTTON */}
             <div className="absolute bottom-6 left-6 right-6 flex justify-between items-center">
@@ -59,9 +58,8 @@ const OurServices = () => {
                 {service.title}
               </h3>
 
-              {/* Arrow Button */}
               <Link href={service.link}>
-                <div>
+                <div className="shrink-0">
                   <svg
                     width="71"
                     height="43"
@@ -87,6 +85,7 @@ const OurServices = () => {
           </div>
         ))}
       </div>
+
     </section>
   );
 };

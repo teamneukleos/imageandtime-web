@@ -11,14 +11,21 @@ const HaierThermocoolContent = () => {
       {/* Header */}
       <div className="max-w-4xl mx-auto mb-16">
         <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8">
-          Haier Thermocool - One Less worry,
-          One more reason to feel at home
-
-        </h1>
+          Haier Thermocool - Let Home Feel Like Home
+       </h1>
 
         <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-          Haier Thermocool is Nigeria’s trusted home appliances brand, 
-          with the aim of giving families one less worry and more reasons to feel at home.
+           Is it a movie or an ad?
+
+        </p>
+
+        <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
+          Brand/Bussiness objective
+       </h1>
+
+       <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
+          Deepen emotional connection with Nigerian households by reframing inverter appliances from functional products to trusted partners that reduce stress, save energy costs, and improve daily family life.
+
         </p>
       </div>
 

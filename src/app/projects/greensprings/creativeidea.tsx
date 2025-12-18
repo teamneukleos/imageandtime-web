@@ -7,7 +7,7 @@ export default function CreativeIdea() {
     <section className="w-full bg-[#0D0D0D] py-14 md:py-28 px-6 md:px-12">
       
       {/* SECTION TEXT */}
-      <div className="max-w-4xl mx-auto space-y-6 mb-20">
+      <div className="max-w-4xl mx-auto space-y-6 mb-20 mt-[-50px]">
         <h2 className="text-xl font-semibold text-white">
           Creative Idea
         </h2>
@@ -42,26 +42,6 @@ export default function CreativeIdea() {
         <img src="/greensprings/img6.jpg" alt="Creative Idea Image" className="w-full object-cover" />
       </div>
 
-      {/* METRICS SECTION */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-12">
-        {/* Impressions */}
-        <div>
-          <p className="text-white text-base mb-2">Impressions</p>
-          <p className="text-[#CC111A] text-3xl font-semibold">56 M+</p>
-        </div>
-
-        {/* Reach */}
-        <div>
-          <p className="text-white text-base mb-2">Reach</p>
-          <p className="text-[#CC111A] text-3xl font-semibold">11 M+</p>
-        </div>
-
-        {/* Views / Plays */}
-        <div>
-          <p className="text-white text-base mb-2">Views/Plays</p>
-          <p className="text-[#CC111A] text-3xl font-semibold">1.8 M</p>
-        </div>
-      </div>
 
     </section>
   );

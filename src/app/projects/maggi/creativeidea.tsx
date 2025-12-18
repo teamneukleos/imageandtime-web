@@ -4,7 +4,7 @@ export default function CreativeIdea() {
   return (
     <section className="w-full bg-[#0D0D0D] py-28 px-6 md:px-12">
       {/* SECTION TEXT */}
-      <div className="max-w-4xl mx-auto space-y-6 mb-20">
+      <div className="max-w-4xl mx-auto space-y-6 mb-20 mt-[-50px]">
         <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
         <p className="text-gray-300 leading-relaxed">
           Traditional recipe videos have lost their spark, struggling to capture

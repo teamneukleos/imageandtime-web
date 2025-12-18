@@ -6,25 +6,46 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
-    image: "/images/hero-bg.png",
+    image: "/images/hero-bg.jpg",
     titleLeft: "Design",
     titleRight: "Culture",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur. Tristique nisl dolor dui lectus ornare dictum mattis pharetra ac. Non ornare sem varius orci.",
+      "We design brands, not just campaigns.",
   },
   {
-    image: "/images/hero-bg-2.png",
+    image: "/images/herobg-2.png",
     titleLeft: "Innovation",
     titleRight: "Transformation",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur. Tristique nisl dolor dui lectus ornare dictum mattis pharetra ac. Non ornare sem varius orci.",
+      "We don’t only make ads that don’t feel like ads.",
   },
   {
-    image: "/images/hero-bg-3.png",
+    image: "/images/herobg3.png",
     titleLeft: "Strategy",
     titleRight: "Insight",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur. Tristique nisl dolor dui lectus ornare dictum mattis pharetra ac. Non ornare sem varius orci.",
+      "We build brands people recognise, trust, and want to belong to.",
+  },
+  {
+    image: "/images/herobg-4.jpg",
+    titleLeft: "Strategy",
+    titleRight: "Insight",
+    subtitle:
+      "And we design experiences that make organisations feel human again.",
+  },
+  {
+    image: "/images/herobg-5.jpg",
+    titleLeft: "Strategy",
+    titleRight: "Insight",
+    subtitle:
+      "Because humans are not creatures of logic. They are creatures of emotion.",
+  },
+  {
+    image: "/images/herobg-6.png",
+    titleLeft: "Strategy",
+    titleRight: "Insight",
+    subtitle:
+      "Whether we’re building a brand, a product, or a workplace culture, we always start with one question: What do you want people to feel?",
   },
 ];
 
@@ -44,7 +65,7 @@ const Hero = () => {
   return (
     <section
   className="
-    relative w-full min-h-screen md:min-h-[150vh]
+    relative w-full min-h-screen md:min-h-[100vh]
     flex flex-col items-center justify-center
     text-white text-center px-6 overflow-hidden
   "

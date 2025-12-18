@@ -11,13 +11,21 @@ const GreenspringsContent = () => {
       {/* Header */}
       <div className="max-w-4xl mx-auto mb-16">
         <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8">
-         Greensprings - Evergreen 40th Anniversary Celebration
+         Greensprings - Greatness is Evergreen
 
         </h1>
 
         <p className="text-gray-300 text-lg md:text-lg leading-relaxed">
-          Evergreen is the 40th anniversary celebration of the school, 
-          with the aim of honoring its enduring legacy and inspiring future generations.
+          40 years in a minute!
+        </p>
+
+        <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
+         Brand/Bussiness objective
+
+        </h1>
+
+        <p className="text-gray-300 text-lg md:text-lg leading-relaxed">
+          Celebrate Greensprings’ legacy of excellence while reinforcing its reputation as a future-focused institution that consistently nurtures confident, intelligent, and globally competitive students.
         </p>
       </div>
 

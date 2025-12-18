@@ -12,12 +12,18 @@ const MaggiContent = () => {
       <div className="max-w-4xl mx-auto mb-16">
         <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8">
           Maggi - Cooking is music with MAGGI
-
-
         </h1>
 
         <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-          Maggi is Nigeria’s flavor brand, with the aim of turning everyday cooking into music and sparking creativity.
+           Recipe videos people can actually vibe to.
+        </p>
+
+        <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
+          Brand/Bussiness objective
+        </h1>
+
+        <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
+           Reignite excitement around everyday cooking by transforming it into a fun, expressive, and culturally relevant experience, reinforcing Maggi as the ingredient that turns routine meals into moments of joy.
         </p>
       </div>
 
