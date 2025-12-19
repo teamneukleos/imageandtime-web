@@ -6,12 +6,12 @@ import Link from "next/link";
 const services = [
   {
     title: "Advertising & Marketing",
-    image: "/services/advertising.png",
+    image: "/services/advertisingg.png",
     link: "/advertising",
   },
   {
     title: "Brand Identity & Product design",
-    image: "/services/brand-identity.png",
+    image: "/services/brandingg.png",
     link: "/brand-identity",
   },
   {

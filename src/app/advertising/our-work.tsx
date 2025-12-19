@@ -26,7 +26,7 @@ const works = [
     title: "Cooking Is Music with Maggi",
     headline: "Recipe videos people can actually vibe to",
     emotive: "Cooking is fun",
-    image: "/work/maggi.png",
+    image: "/work/maggi-bg.png",
     link: "/projects/maggi"
   },
   {
