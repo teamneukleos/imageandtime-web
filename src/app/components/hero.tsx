@@ -43,13 +43,15 @@ const Hero = () => {
   }, []);
 
   const slide = slides[index];
+  const currentSlide = String(index + 1).padStart(2, '0');
+  const totalSlides = String(slides.length).padStart(2, '0');
 
   return (
     <section
       className="
         relative w-full min-h-screen md:min-h-[100vh]
-        flex flex-col items-center justify-center
-        text-white text-center px-6 overflow-hidden
+        flex flex-col items-start justify-center
+        text-white overflow-hidden
       "
     >
       {/* BACKGROUND SLIDING */}
@@ -81,20 +83,58 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
       {/* CONTENT SLIDE */}
-      <AnimatePresence mode="wait">
+      <div className="w-full mt-32 px-6 md:px-8">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -50, opacity: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <p className="text-base md:text-lg lg:text-xl font-normal max-w-2xl leading-relaxed text-left">
+              {slide.subtitle}
+            </p>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {/* ANIMATED VERTICAL LINE - CENTER BOTTOM */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 h-16 w-[2px] overflow-hidden">
         <motion.div
-          key={index}
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -50, opacity: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-[10vh] md:mt-[30vh]"
-        >
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold max-w-4xl mx-auto leading-tight">
-            {slide.subtitle}
-          </h1>
-        </motion.div>
-      </AnimatePresence>
+          className="w-full h-8 bg-white"
+          animate={{
+            y: ["-100%", "200%"]
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "linear",
+            repeatDelay: 0.5
+          }}
+        />
+      </div>
+
+      {/* SLIDE COUNTER */}
+      <div className="absolute bottom-8 left-6 md:left-8">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="flex items-start"
+          >
+            <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+              {currentSlide}
+            </span>
+            <span className="text-xs md:text-sm font-bold text-white/50 mt-1">
+              /{totalSlides}
+            </span>
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </section>
   );
 };

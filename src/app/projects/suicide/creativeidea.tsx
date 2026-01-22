@@ -3,14 +3,15 @@ import React from "react";
 export default function CreativeIdea() {
   return (
     <section className="w-full bg-[#0D0D0D] py-28 px-6 md:px-12">
-      {/* SECTION TEXT */}
-      <div className="max-w-4xl mx-auto space-y-6 mb-20 mt-[-50px]">
-        <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
-        <p className="text-gray-300 leading-relaxed">
-          Despite having one of the highest suicide rates in Africa at 6.9
-           per 100,000 people in 2019, a common misconception persists: 
-           "suicide isn't a Nigerian thing," and those who take their own 
-           lives are viewed as weak. As a result, many turn to the internet
+      {/* SECTION TEXT - ALIGNED WITH SUICIDE CONTENT */}
+      <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
+        <div className="max-w-4xl space-y-6">
+          <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Despite having one of the highest suicide rates in Africa at 6.9
+            per 100,000 people in 2019, a common misconception persists: 
+            "suicide isn't a Nigerian thing," and those who take their own 
+            lives are viewed as weak. As a result, many turn to the internet
             for answers. Noticing the internet's vast review culture, we decided 
             to apply this concept to suicide prevention. Statistics reveal that nine 
             out of ten people who attempt suicide and survive never try again, making 
@@ -18,8 +19,8 @@ export default function CreativeIdea() {
             a suicide survivor herself, we launched "The Suicide Review - I Tried Suicide 
             So You Don't Have To." This platform collects stories from Nigerian survivors, 
             serving as a vital resource for prevention.
-        </p>
-        
+          </p>
+        </div>
       </div>
 
       {/* IMAGE */}

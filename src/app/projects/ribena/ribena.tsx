@@ -6,33 +6,37 @@ import Image from "next/image";
 const RibenaContent = () => {
   return (
     <section className="w-full bg-[#0D0D0D] py-32 px-6 md:px-12">
-      {/* Header */}
-      <div className="max-w-4xl mx-auto mb-16">
-        <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8">
-          Ribena – Packaging Rebrand
-        </h1>
+      {/* SHARED CONTAINER (aligns text with image) */}
+      <div className="max-w-5xl mx-auto">
+        
+        {/* HEADER / TEXT CONTENT */}
+        <div className="max-w-4xl mb-16">
+          <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8">
+            Ribena – Packaging Rebrand
+          </h1>
 
-        <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-           Pick me
-        </p>
+          <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
+            Pick me
+          </p>
 
-        <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
-          Brand/Business objective
-        </h1>
+          <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
+            Brand/Business objective
+          </h1>
 
-        <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-           Refresh Ribena’s packaging to stand out on shelf, increase visual appeal for kids and parents, and strengthen brand recognition through bolder colour, playfulness, and interaction.
-        </p>
-      </div>
+          <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
+            Refresh Ribena's packaging to stand out on shelf, increase visual appeal for kids and parents, and strengthen brand recognition through bolder colour, playfulness, and interaction.
+          </p>
+        </div>
 
-      {/* Image Section */}
-      <div className="max-w-5xl mx-auto relative aspect-video rounded-lg overflow-hidden shadow-lg">
-        <Image
-          src="/ribena/ribena.png"
-          alt=" Campaign Image"
-          fill
-          className="object-cover"
-        />
+        {/* IMAGE SECTION */}
+        <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+          <Image
+            src="/ribena/ribena.png"
+            alt="Campaign Image"
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   );
