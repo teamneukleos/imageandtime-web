@@ -82,7 +82,7 @@ export default function AboutHero() {
           </div>
         </div>
 
-        {/* RIGHT SIDE IMAGE */}
+        
         {/* RIGHT SIDE IMAGE */}
 <div className="flex-1 w-full">
   <div className="relative w-full min-h-[250px] h-[350px] md:h-[350px] overflow-hidden rounded-2xl">

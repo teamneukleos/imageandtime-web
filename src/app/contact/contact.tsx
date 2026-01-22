@@ -24,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20" style={{ backgroundColor: '#111111' }}>
+    <section className="py-20 " style={{ backgroundColor: '#111111' }}>
       <div className="max-w-6xl mx-auto px-6 mt-18">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}

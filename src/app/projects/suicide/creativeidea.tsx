@@ -22,7 +22,7 @@ export default function CreativeIdea() {
         
       </div>
 
-      {/* IMAGE - CENTERED */}
+      {/* IMAGE */}
       <div className="max-w-6xl mx-auto mb-28 flex justify-center">
         <img
           src="/suicide/img1.png"
