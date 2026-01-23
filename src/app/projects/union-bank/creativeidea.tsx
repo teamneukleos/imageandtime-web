@@ -35,8 +35,8 @@ export default function CreativeIdea() {
           </p>
         </div>
 
-        {/* IMAGES — STACKED (same left edge as text) */}
-        <div className="flex flex-col gap-6 mb-28">
+        {/* IMAGES — GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-28">
           <img
             src="/union/img1.png"
             alt="Creative Idea Image"

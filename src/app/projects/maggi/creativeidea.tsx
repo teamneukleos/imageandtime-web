@@ -34,7 +34,7 @@ export default function CreativeIdea() {
       {/* IMAGE GRID */}
       <div
         className="
-          max-w-6xl mx-auto 
+          max-w-5xl mx-auto 
           grid grid-cols-1 md:grid-cols-2 
           gap-6 
           mb-28

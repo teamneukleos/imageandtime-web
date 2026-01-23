@@ -34,7 +34,7 @@ export default function CreativeIdea() {
       </div>
 
       {/* IMAGE GRID */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-28">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-28">
         <img src="/greensprings/img1.jpg" alt="Creative Idea Image" className="w-full object-cover" />
         <img src="/greensprings/img2.jpg" alt="Creative Idea Image" className="w-full object-cover" />
         <img src="/greensprings/img3.jpg" alt="Creative Idea Image" className="w-full object-cover" />

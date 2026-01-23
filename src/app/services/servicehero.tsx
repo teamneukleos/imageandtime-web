@@ -1,39 +1,61 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function ServiceHero() {
+const ServiceHero = () => {
   return (
-    <div className="w-full flex justify-center px-4 md:px-8 py-20 bg-[#111111]">
-      <div
-        className="bg-[#1E1E1E] rounded-3xl w-full mt-16 max-w-7xl p-8 md:p-16
-        flex flex-col md:flex-row items-start md:items-center gap-12"
-      >
-        {/* LEFT SIDE */}
-        <div className="flex-1 mb-8 md:mb-44">
-          <h2 className="text-white text-3xl md:text-3xl font-semibold">
-            Our Services
-          </h2>
-
-          <p className="text-gray-300 mt-6 text-sm leading-relaxed max-w-lg">
-            We help ambitious brands craft remarkable identities, create
-            effective advertising and conceive memorable experiences that
-            connect people to their products and services.
-          </p>
-        </div>
-
-        {/* RIGHT SIDE IMAGE */}
-        <div className="flex-1 w-full">
-          <div className="relative w-full min-h-[250px] h-[350px] md:h-[350px] overflow-hidden rounded-2xl">
-            <Image
-              src="/services/passion.png"
-              alt="Team"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
+    <section
+      className="
+        relative w-full min-h-screen
+        flex flex-col items-start justify-center
+        text-white overflow-hidden
+      "
+    >
+      {/* STATIC BACKGROUND IMAGE */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/services/serviceshero.png"
+          alt="Service Hero Background"
+          fill
+          priority
+          className="object-cover"
+        />
       </div>
-    </div>
+
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 bg-black/40 -z-10" />
+
+      {/* CONTENT */}
+      <div className="w-full mt-32 px-6 md:px-8">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-base md:text-lg lg:text-xl font-normal max-w-2xl leading-relaxed"
+        >
+          We help ambitious brands craft remarkable <br />
+          identities create effective advertising and <br />
+          conceive memorable experiences that connect <br />
+          people to their products and services.
+        </motion.p>
+      </div>
+
+      {/* ANIMATED VERTICAL LINE */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 h-16 w-[2px] overflow-hidden">
+        <motion.div
+          className="w-full h-8 bg-white"
+          animate={{ y: ["-100%", "200%"] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "linear",
+            repeatDelay: 0.5,
+          }}
+        />
+      </div>
+    </section>
   );
-}
+};
+
+export default ServiceHero;
