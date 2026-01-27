@@ -1,61 +1,101 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useInView, useMotionValue, animate } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
-const Hero = () => {
+const stats = [
+  { value: 50, suffix: "+", label: "Brands Trust us" },
+  { value: 97, suffix: "%", label: "Brands Trust us" },
+  { value: 103, suffix: "+", label: "Brands Trust us" },
+];
+
+const Counter = ({ value, suffix }: { value: number; suffix?: string }) => {
+  const ref = useRef<HTMLSpanElement | null>(null);
+  const isInView = useInView(ref, { once: true });
+  const motionVal = useMotionValue(0);
+  const [displayed, setDisplayed] = useState<number>(0);
+
+  useEffect(() => {
+    let controls: { stop?: () => void } | undefined;
+    const unsubscribe = motionVal.on("change", (v) => {
+      if (typeof v === "number") setDisplayed(Math.floor(v));
+    });
+
+    if (isInView) {
+      controls = animate(motionVal, value, { duration: 2 });
+    }
+
+    return () => {
+      unsubscribe();
+      if (controls && typeof controls.stop === "function") controls.stop();
+    };
+  }, [isInView, motionVal, value]);
+
   return (
-    <section
-      className="
-        relative w-full min-h-screen
-        flex flex-col items-start justify-center
-        text-white overflow-hidden
-      "
-    >
-      {/* BACKGROUND IMAGE */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/hero-bg.jpg"
-          alt="About Hero Background"
-          fill
-          priority
-          className="object-cover"
-        />
-      </div>
-
-      {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-black/40 -z-10" />
-
-      {/* CONTENT */}
-      <div className="w-full mt-32 px-6 md:px-8">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-base md:text-lg lg:text-xl font-normal max-w-2xl leading-relaxed"
-        >
-          At Image & Time, we create transformative team <br />
-          experiences that rebuild connection, trust, and <br />
-          shared purpose, helping Africa’s leading companies <br />
-          grow from the inside out.
-        </motion.p>
-      </div>
-
-      {/* ANIMATED VERTICAL LINE */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 h-16 w-[2px] overflow-hidden">
-        <motion.div
-          className="w-full h-8 bg-white"
-          animate={{ y: ["-100%", "200%"] }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "linear",
-            repeatDelay: 0.5,
-          }}
-        />
-      </div>
-    </section>
+    <span ref={ref}>
+      {displayed}
+      {suffix || ""}
+    </span>
   );
 };
 
-export default Hero;
+export default function AboutHero() {
+  return (
+    <div className="w-full flex justify-center px-4 md:px-8 py-20 bg-[#111111]">
+      <div className="bg-[#1E1E1E] rounded-3xl w-full mt-16 max-w-7xl p-8 md:p-16 
+    flex flex-col md:flex-row items-start md:items-center gap-12">
+
+        {/* LEFT SIDE */}
+        <div className="flex-1">
+          <h2 className="text-white text-3xl md:text-3xl font-semibold">
+            About Image and Time
+          </h2>
+
+          <p className="text-gray-300 mt-6 text-sm leading-relaxed max-w-lg">
+            At Image & Time, we create transformative team experiences that
+            rebuild connection, trust, and shared purpose, helping Africa’s
+            leading companies grow from the inside out.
+          </p>
+
+          <a
+            href="/contact"
+            className="inline-block bg-[#FF3D3D] text-white px-6 py-3 mt-8 rounded-lg font-medium hover:bg-[#e43333] transition"
+          >
+            Get in Touch
+          </a>
+
+          {/* STATS */}
+          <div className="mt-14 grid grid-cols-3 gap-8">
+            {stats.map((item, i) => (
+              <div key={i} className="flex flex-col">
+
+                <div className="text-white text-3xl md:text-4xl font-semibold">
+                  <Counter value={item.value} suffix={item.suffix} />
+                </div>
+
+                <div className="w-6 h-[3px] bg-[#FF3D3D] mt-3 rounded"></div>
+
+                <p className="text-gray-400 text-sm mt-2">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        
+        {/* RIGHT SIDE IMAGE */}
+<div className="flex-1 w-full">
+  <div className="relative w-full min-h-[250px] h-[350px] md:h-[350px] overflow-hidden rounded-2xl">
+    <Image
+      src="/about/team.png"
+      alt="Team"
+      fill
+      className="object-cover"
+    />
+  </div>
+</div>
+
+      </div>
+    </div>
+  );
+}

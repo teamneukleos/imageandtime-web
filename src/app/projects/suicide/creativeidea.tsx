@@ -23,30 +23,28 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      {/* IMAGE */}
-      <div className="max-w-6xl mx-auto mb-28 flex justify-center">
-        <img
-          src="/suicide/img1.png"
-          alt="Creative Idea Image"
-          className="w-full md:w-auto max-w-full h-auto object-cover"
+      {/* VIDEO */}
+      <div className="max-w-4xl mx-auto mb-28 flex justify-center">
+        <video
+          src="/suicide/suicide-video.mp4"
+          controls
+          playsInline
+          className="w-full md:w-auto max-w-full h-auto rounded-lg object-cover"
         />
       </div>
 
       {/* METRICS SECTION */}
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-12">
-        {/* Impressions */}
         <div>
           <p className="text-white text-base mb-2">Impressions</p>
           <p className="text-[#CC111A] text-3xl font-semibold">53M+</p>
         </div>
 
-        {/* Reach */}
         <div>
           <p className="text-white text-base mb-2">Reach</p>
           <p className="text-[#CC111A] text-3xl font-semibold">10M+</p>
         </div>
 
-        {/* Views / Plays */}
         <div>
           <p className="text-white text-base mb-2">Views/Plays</p>
           <p className="text-[#CC111A] text-3xl font-semibold">1M+</p>

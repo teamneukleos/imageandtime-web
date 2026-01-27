@@ -1,60 +1,71 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 
-export default function OurTeam() {
+const Team = () => {
+  const teamMembers = [
+    {
+      name: "Motola Olusoga",
+      role: "Creative Director",
+      image: "/team/motola.png",
+    },
+    {
+      name: "Tomisin Olabode",
+      role: "Associate Creative Director",
+      image: "/team/tomisin.png",
+    },
+    {
+      name: "Sidney Uzor",
+      role: "Design lead",
+      image: "/team/Sidney.jpg",
+    },
+  ];
+
   return (
-    <section className="w-full bg-[#111111] py-24 px-6 md:px-12">
+    <section className="w-full bg-[#111111] py-28 px-6">
       <div className="max-w-7xl mx-auto">
+        {/* HEADER */}
+        <h2 className="text-3xl font-semibold text-white mb-20">
+          Our Team
+        </h2>
 
-        {/* GRID LAYOUT */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="group">
+              {/* IMAGE */}
+              <div className="relative w-full aspect-[3/4] overflow-hidden mb-6">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="
+                    object-cover
+                    filter grayscale brightness-75
+                    group-hover:grayscale-0 group-hover:brightness-100
+                    transition-all duration-500
+                  "
+                />
 
-          {/* LEFT — ABOUT LABEL */}
-          <div className="md:col-span-2">
-            <p className="text-xs tracking-widest text-gray-400 mb-4">
-              OUR TEAM
-            </p>
-            <div className="w-full h-px bg-gray-700" />
-          </div>
+                {/* subtle dark wash */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-500" />
+              </div>
 
-          {/* MIDDLE — HEADING */}
-          <div className="md:col-span-4">
-            <h2 className="text-2xl md:text-2xl lg:text-3xl font-light text-white leading-tight">
-              Our team:
-              <br />
-             Catalysts of <br />
-             Success
-            </h2>
-          </div>
-
-          {/* RIGHT — ARTICLE */}
-          <div className="md:col-span-5 md:col-start-8 space-y-8 text-gray-300 leading-relaxed text-sm md:text-base">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna 
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit 
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-              occaecat cupidatat non proident, sunt in culpa qui officia 
-              deserunt mollit anim id est laborum.
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna 
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit 
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-              occaecat cupidatat non proident, sunt in culpa qui officia 
-              deserunt mollit anim id est laborum.
-            </p>
-          </div>
-
+              {/* TEXT */}
+              <div>
+                <h3 className="text-xl font-medium text-white mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  {member.role}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Team;

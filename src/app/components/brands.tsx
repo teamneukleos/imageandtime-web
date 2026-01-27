@@ -12,6 +12,14 @@ const brands = [
   { name: "Milo", logo: "/brands/milo.png" },
   { name: "Nescafe", logo: "/brands/nescafe.png" },
   { name: "Unionbank", logo: "/brands/union.png" },
+
+  // ➕ added brands
+  { name: "Pepsi", logo: "/brands/pepsi.png" },
+  { name: "Coca-Cola", logo: "/brands/cocacola.png" },
+  { name: "MTN", logo: "/brands/mtn.png" },
+  { name: "Airtel", logo: "/brands/airtel.png" },
+  { name: "Google", logo: "/brands/google.png" },
+  { name: "Meta", logo: "/brands/meta.png" },
 ];
 
 const Brands = () => {
@@ -38,7 +46,7 @@ const Brands = () => {
                 alt={brand.name}
                 width={200}
                 height={80}
-                className="object-contain transition-all duration-300"
+                className="object-contain"
               />
             </div>
           ))}
@@ -54,7 +62,7 @@ const Brands = () => {
                 alt={brand.name}
                 width={200}
                 height={80}
-                className="object-contain transition-all duration-300"
+                className="object-contain"
               />
             </div>
           ))}
@@ -71,8 +79,9 @@ const Brands = () => {
           }
         }
 
+        
         .animate-scroll {
-          animation: scroll 40s linear infinite;
+          animation: scroll 22s linear infinite;
         }
 
         .animate-scroll:hover {

@@ -3,7 +3,7 @@ import React from "react";
 export default function CreativeIdea() {
   return (
     <section className="w-full bg-[#0D0D0D] py-28 px-6 md:px-12">
-      {/* SECTION TEXT - ALIGNED WITH NESTLE CONTENT */}
+      {/* SECTION TEXT */}
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Creative Idea</h2>

@@ -41,12 +41,27 @@ export default function CreativeIdea() {
         "
       >
         <img
-          src="/maggi/img1.png"
+          src="/maggi/img1.jpg"
           alt="Creative Idea Image"
           className="w-full h-auto object-cover"
         />
         <img
-          src="/maggi/img2.png"
+          src="/maggi/img2.jpg"
+          alt="Creative Idea Image"
+          className="w-full h-auto object-cover"
+        />
+        <img
+          src="/maggi/img3.jpg"
+          alt="Creative Idea Image"
+          className="w-full h-auto object-cover"
+        />
+        <img
+          src="/maggi/img4.jpg"
+          alt="Creative Idea Image"
+          className="w-full h-auto object-cover"
+        />
+        <img
+          src="/maggi/img5.jpg"
           alt="Creative Idea Image"
           className="w-full h-auto object-cover"
         />

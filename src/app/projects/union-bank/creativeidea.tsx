@@ -53,17 +53,17 @@ export default function CreativeIdea() {
         <div className="max-w-5xl grid grid-cols-1 sm:grid-cols-3 text-center gap-12">
           <div>
             <p className="text-white text-base mb-2">Impressions</p>
-            <p className="text-[#CC111A] text-3xl font-semibold">53M+</p>
+            <p className="text-[#CC111A] text-3xl font-semibold">181M+</p>
           </div>
 
           <div>
-            <p className="text-white text-base mb-2">Reach</p>
-            <p className="text-[#CC111A] text-3xl font-semibold">10M+</p>
+            <p className="text-white text-base mb-2">Increase in new accounts</p>
+            <p className="text-[#CC111A] text-3xl font-semibold">20%</p>
           </div>
 
           <div>
             <p className="text-white text-base mb-2">Views/Plays</p>
-            <p className="text-[#CC111A] text-3xl font-semibold">1M+</p>
+            <p className="text-[#CC111A] text-3xl font-semibold">8M+</p>
           </div>
         </div>
 

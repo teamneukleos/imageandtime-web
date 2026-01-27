@@ -1,12 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 
 const Board = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-  const BoardMembers = [
+  const boardMembers = [
     {
       name: "Gbonju Akingbade",
       role: "Member",
@@ -25,31 +22,41 @@ const Board = () => {
   ];
 
   return (
-    <section className="w-full bg-[#111111] py-24 px-6 relative">
+    <section className="w-full bg-[#111111] py-28 px-6">
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
-        <h2 className="text-3xl md:text-3xl font-semibold text-white mb-16">
+        <h2 className="text-3xl font-semibold text-white mb-20">
           Our Board
         </h2>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          {BoardMembers.map((member, index) => (
-            <div
-              key={index}
-              className="relative group cursor-pointer z-20"
-              onMouseEnter={() => setActiveIndex(index)}
-              onMouseLeave={() => setActiveIndex(null)}
-              onClick={() =>
-                setActiveIndex(activeIndex === index ? null : index)
-              }
-            >
-              {/* NAME AND ROLE */}
-              <div className="text-white">
-                <h3 className="text-xl md:text-xl font-medium mb-2 group-hover:text-gray-300 transition">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {boardMembers.map((member, index) => (
+            <div key={index} className="group">
+              {/* IMAGE */}
+              <div className="relative w-full aspect-[3/4] overflow-hidden mb-6">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="
+                    object-cover
+                    filter grayscale brightness-75
+                    group-hover:grayscale-0 group-hover:brightness-100
+                    transition-all duration-500
+                  "
+                />
+
+                {/* subtle dark wash */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-500" />
+              </div>
+
+              {/* TEXT */}
+              <div>
+                <h3 className="text-xl font-medium text-white mb-1">
                   {member.name}
                 </h3>
-                <p className="text-gray-400 text-sm md:text-base">
+                <p className="text-gray-400 text-sm">
                   {member.role}
                 </p>
               </div>
@@ -57,20 +64,6 @@ const Board = () => {
           ))}
         </div>
       </div>
-
-      {/* IMAGE OVERLAY */}
-      {activeIndex !== null && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center pointer-events-none animate-fadeIn">
-          <div className="relative w-[60vw] md:w-[300px] h-[70vh] md:h-[400px] rounded-xl overflow-hidden">
-            <Image
-              src={BoardMembers[activeIndex].image}
-              alt={BoardMembers[activeIndex].name}
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-      )}
     </section>
   );
 };

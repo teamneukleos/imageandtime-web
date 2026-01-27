@@ -28,7 +28,7 @@ const Navbar = () => {
           <Link href="/" className="hover:opacity-80 transition">Home</Link>
           <Link href="/about" className="hover:opacity-80 transition">About Us</Link>
           <Link href="/services" className="hover:opacity-80 transition">Services</Link>
-           <Link href="/projects" className="hover:opacity-80 transition">Projects</Link>
+           
 
           <Link
             href="/contact"
@@ -75,13 +75,6 @@ const Navbar = () => {
             onClick={() => setOpen(false)}
           >
             Services
-          </Link>
-          <Link
-            href="/projects"
-            className="block text-sm"
-            onClick={() => setOpen(false)}
-          >
-            Projects
           </Link>
 
           <Link

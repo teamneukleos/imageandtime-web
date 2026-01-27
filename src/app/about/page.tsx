@@ -1,19 +1,17 @@
 import AboutHero from "./abouthero";
-import About from "./about";
-import Stat from "./stat";
-import OurTeam from "./ourteam";
+import Expertise from "./expertise";
+import Journey from "./journey";
 import Board from "./board";
-import Team from "./team";
+import Team from "./ourteam";
 
 export default function HomePage() {
   return (
     <>
       <AboutHero />
-        <About />
-        <Stat />
-        <OurTeam />
-        <Board />
-        <Team />
+      <Expertise />
+      <Journey />
+      <Board />
+      <Team />
     </>
   );
 }

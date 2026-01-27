@@ -27,6 +27,20 @@ const MaggiContent = () => {
       src: "https://www.youtube.com/embed/ktQwzxGO0m0?start=3&autoplay=1",
       thumbnail: "/maggi/thumbnail3.png",
       title: "Maggi Video 3"
+    },
+    {
+      id: 4,
+      type: "youtube",
+      src: "https://www.youtube.com/embed/U7svifOMXfw?si=bqlO14uAst6HByqf?start=3&autoplay=1",
+      thumbnail: "/maggi/thumbnail4.png",
+      title: "Maggi Video 4"
+    },
+   {
+      id: 5,
+      type: "youtube",
+      src: "https://www.youtube.com/embed/yAeD1fb63dQ?si=1R0943YFXTtAK0dG?start=3&autoplay=1",
+      thumbnail: "/maggi/thumbnail5.png",
+      title: "Maggi Video 5"
     }
   ];
 
@@ -54,57 +68,161 @@ const MaggiContent = () => {
           </p>
         </div>
 
-        {/* VIDEOS SECTION */}
+        {/* VIDEOS SECTION - 1-2-2 LAYOUT */}
         <div className="space-y-6">
-          {videos.map((video) => (
-            <div
-              key={video.id}
-              className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-black"
-            >
-              {playingVideo !== video.id && (
-                <div
-                  className="absolute inset-0 w-full h-full cursor-pointer"
-                  onClick={() => setPlayingVideo(video.id)}
-                >
-                  <Image
-                    src={video.thumbnail}
-                    alt={video.title}
-                    fill
-                    className="object-cover"
-                  />
+          {/* FIRST VIDEO - FULL WIDTH */}
+          <div
+            className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-black"
+          >
+            {playingVideo !== videos[0].id && (
+              <div
+                className="absolute inset-0 w-full h-full cursor-pointer"
+                onClick={() => setPlayingVideo(videos[0].id)}
+              >
+                <Image
+                  src={videos[0].thumbnail}
+                  alt={videos[0].title}
+                  fill
+                  className="object-cover"
+                />
 
-                  {/* Custom Play button */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                      <svg
-                        width="61"
-                        height="72"
-                        viewBox="0 0 81 92"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.50001 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </div>
+                {/* Custom Play button */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                    <svg
+                      width="61"
+                      height="72"
+                      viewBox="0 0 81 92"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.50001 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
                 </div>
-              )}
+              </div>
+            )}
 
-              {/* Video iframe */}
-              {playingVideo === video.id && (
-                <iframe
-                  src={video.src}
-                  title={video.title}
-                  className="w-full h-full"
-                  allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              )}
-            </div>
-          ))}
+            {/* Video iframe */}
+            {playingVideo === videos[0].id && (
+              <iframe
+                src={videos[0].src}
+                title={videos[0].title}
+                className="w-full h-full"
+                allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            )}
+          </div>
+
+          {/* SECOND ROW - 2 VIDEOS */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {videos.slice(1, 3).map((video) => (
+              <div
+                key={video.id}
+                className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-black"
+              >
+                {playingVideo !== video.id && (
+                  <div
+                    className="absolute inset-0 w-full h-full cursor-pointer"
+                    onClick={() => setPlayingVideo(video.id)}
+                  >
+                    <Image
+                      src={video.thumbnail}
+                      alt={video.title}
+                      fill
+                      className="object-cover"
+                    />
+
+                    {/* Custom Play button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                        <svg
+                          width="61"
+                          height="72"
+                          viewBox="0 0 81 92"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.50001 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Video iframe */}
+                {playingVideo === video.id && (
+                  <iframe
+                    src={video.src}
+                    title={video.title}
+                    className="w-full h-full"
+                    allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* THIRD ROW - 2 VIDEOS */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {videos.slice(3, 5).map((video) => (
+              <div
+                key={video.id}
+                className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-black"
+              >
+                {playingVideo !== video.id && (
+                  <div
+                    className="absolute inset-0 w-full h-full cursor-pointer"
+                    onClick={() => setPlayingVideo(video.id)}
+                  >
+                    <Image
+                      src={video.thumbnail}
+                      alt={video.title}
+                      fill
+                      className="object-cover"
+                    />
+
+                    {/* Custom Play button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                        <svg
+                          width="61"
+                          height="72"
+                          viewBox="0 0 81 92"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.50001 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Video iframe */}
+                {playingVideo === video.id && (
+                  <iframe
+                    src={video.src}
+                    title={video.title}
+                    className="w-full h-full"
+                    allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

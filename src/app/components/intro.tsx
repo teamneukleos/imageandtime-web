@@ -23,10 +23,7 @@ export default function Intro() {
             Time, a world leading Advertising and creative agency.
           </h2>
 
-          <p className="text-[#C7C7C7] text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur. Sed sagittis cursus
-            eleifend ut sit et.
-          </p>
+          
 
           {/* READ MORE BUTTON */}
           <Link
