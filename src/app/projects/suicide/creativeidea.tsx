@@ -23,16 +23,6 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      {/* VIDEO */}
-      <div className="max-w-4xl mx-auto mb-28 flex justify-center">
-        <video
-          src="/suicide/suicide-video.mp4"
-          controls
-          playsInline
-          className="w-full md:w-auto max-w-full h-auto rounded-lg object-cover"
-        />
-      </div>
-
       {/* METRICS SECTION */}
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-12">
         <div>
