@@ -7,7 +7,7 @@ export default function CreativeIdea() {
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Traditional recipe videos have lost their spark, struggling to capture
             audience attention. To reinvent the experience, we developed Cooking
             is Music with Maggi, a campaign that merged Nigeria's most popular
@@ -18,7 +18,7 @@ export default function CreativeIdea() {
             Cleverlee and Chef Debbie, we created full-length innovative musical
             recipes crafted entirely from cooking sounds.
           </p>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The campaign launched across YouTube and social media, quickly
             sparking hundreds of user-generated cooking videos and driving higher
             engagement. Beyond entertainment, the initiative established a new

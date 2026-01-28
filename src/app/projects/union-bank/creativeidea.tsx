@@ -5,14 +5,14 @@ import React from "react";
 export default function CreativeIdea() {
   return (
     <section className="w-full bg-[#0D0D0D] py-28 px-6 md:px-12">
-      {/* SHARED CONTAINER — same idea as UnionContent */}
+      {/* SHARED CONTAINER */}
       <div className="max-w-5xl mx-auto">
 
-        {/* SECTION TEXT (aligned to image left edge) */}
+        {/* SECTION TEXT */}
         <div className="max-w-4xl space-y-6 mb-20 mt-[-50px]">
-          <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
+          <h2 className="text-lg font-semibold text-white">Creative Idea</h2>
 
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Union Bank’s brand journey begins with a deep commitment to truly
             understanding the consumer and unlocking insights that reveal what
             matters most to them. By unearthing the brand’s DNA — its core
@@ -23,7 +23,7 @@ export default function CreativeIdea() {
             aspirations, values, and everyday realities of its customers.
           </p>
 
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Building on this foundation, the strategy focuses on repositioning
             the brand to address perception challenges and strengthen relevance
             in a competitive market. By reframing how consumers see Union Bank,

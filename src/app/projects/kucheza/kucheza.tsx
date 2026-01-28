@@ -31,7 +31,7 @@ const KuchezaContent = () => {
         {/* IMAGE SECTION */}
         <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/kucheza/kucheza.png"
+            src="/kucheza/kucheza-brand.jpg"
             alt="Kucheza Campaign Image"
             fill
             className="object-cover"

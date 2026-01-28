@@ -1,8 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 const Team = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const teamMembers = [
     {
       name: "Motola Olusoga",
@@ -31,37 +34,54 @@ const Team = () => {
 
         {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="group">
-              {/* IMAGE */}
-              <div className="relative w-full aspect-[3/4] overflow-hidden mb-6">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="
-                    object-cover
-                    filter grayscale brightness-75
-                    group-hover:grayscale-0 group-hover:brightness-100
-                    transition-all duration-500
-                  "
-                />
+          {teamMembers.map((member, index) => {
+            const isActive = activeIndex === index;
 
-                {/* subtle dark wash */}
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-500" />
-              </div>
+            return (
+              <div
+                key={index}
+                className="group cursor-pointer"
+                onClick={() =>
+                  setActiveIndex(isActive ? null : index)
+                }
+              >
+                {/* IMAGE */}
+                <div className="relative w-full aspect-[3/4] overflow-hidden mb-6">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className={`
+                      object-cover transition-all duration-500
+                      grayscale brightness-75
+                      md:group-hover:grayscale-0 md:group-hover:brightness-100
+                      ${isActive ? "grayscale-0 brightness-100" : ""}
+                    `}
+                  />
 
-              {/* TEXT */}
-              <div>
-                <h3 className="text-xl font-medium text-white mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-gray-400 text-sm">
-                  {member.role}
-                </p>
+                  {/* DARK OVERLAY */}
+                  <div
+                    className={`
+                      absolute inset-0 transition-all duration-500
+                      bg-black/30
+                      md:group-hover:bg-black/0
+                      ${isActive ? "bg-black/0" : ""}
+                    `}
+                  />
+                </div>
+
+                {/* TEXT */}
+                <div>
+                  <h3 className="text-xl font-medium text-white mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-gray-400 text-sm">
+                    {member.role}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

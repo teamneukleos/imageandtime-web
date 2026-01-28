@@ -13,7 +13,7 @@ export default function CreativeIdea() {
             Creative Idea
           </h2>
 
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The creative idea for Union Bank's investment app, 
             M36, is to craft a distinctive brand identity that positions 
             it as a modern, trusted, and empowering financial companion. 

@@ -7,7 +7,7 @@ export default function CreativeIdea() {
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             There are several elements and important personas that make 
             a party, a gathering or an event either fun, exciting or boring. 
             They all play a key role in bringing life to the party. We began 
@@ -19,15 +19,7 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      {/* IMAGE  */}
-      <div className="max-w-6xl mx-auto mb-28 flex justify-center">
-        <img
-          src="/work/nestle-purelife.png"
-          alt="Creative Idea Image"
-          className="w-full md:w-auto max-w-full h-auto object-cover"
-        />
-      </div>
-
+      
       {/* METRICS SECTION */}
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-12">
         {/* Impressions */}

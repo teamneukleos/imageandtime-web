@@ -58,7 +58,7 @@ const Expertise = () => {
                   />
                 </svg>
 
-                <span className="text-base md:text-lg">{feature}</span>
+                <span className="text-base md:text-sm">{feature}</span>
               </div>
             ))}
           </div>

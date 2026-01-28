@@ -26,8 +26,8 @@ const ServiceHero = () => {
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
-      {/* CONTENT */}
-      <div className="w-full mt-32 px-6 md:px-8">
+      {/* CONTENT - DESKTOP */}
+      <div className="hidden md:block w-full mt-32 px-6 md:px-8">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,6 +38,25 @@ const ServiceHero = () => {
           identities create effective advertising and <br />
           conceive memorable experiences that connect <br />
           people to their products and services.
+        </motion.p>
+      </div>
+
+      {/* CONTENT - MOBILE */}
+      <div className="block md:hidden w-full mt-40 px-6">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-base font-normal max-w-xs leading-relaxed"
+        >
+          We help ambitious
+          brands craft remarkable
+          identities create
+          effective advertising
+          and conceive memorable
+          experiences that
+          connect people to their
+          products and services.
         </motion.p>
       </div>
 

@@ -9,7 +9,7 @@ export default function CreativeIdea() {
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">About Awarri</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Awarri is a pan-African advanced artificial intelligence (AI) and
             robotics company focused on preparing young people for the future
             of work. Built at the intersection of technology, education, and
@@ -23,7 +23,7 @@ export default function CreativeIdea() {
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">The Task</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The challenge was to create a dynamic and flexible brand identity
             that allows Awarri to compete on a global stage while remaining
             deeply connected to its African roots.
@@ -35,7 +35,7 @@ export default function CreativeIdea() {
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The creative idea centered on building a cohesive and future-ready
             identity rooted in clarity and meaning. The goal was to express
             Awarri's purpose through a visual language that feels innovative,
@@ -50,7 +50,7 @@ export default function CreativeIdea() {
           <h2 className="text-xl font-semibold text-white">
             Logo Concept — "Seek & Find"
           </h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             "Awarri" translates to <span className="italic">seek and find</span>{" "}
             in Yoruba — a concept that aligns with discovery, learning, and
             exploration. The logo was designed to embody curiosity, progress,
@@ -86,7 +86,7 @@ export default function CreativeIdea() {
       <div className="max-w-5xl mx-auto mb-12">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Final Logo</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The final logo reflects Awarri's mission to build an ecosystem of
             thinkers, creators, and innovators, balancing simplicity with
             character and meaning.
@@ -117,7 +117,7 @@ export default function CreativeIdea() {
           <h2 className="text-xl font-semibold text-white">
             Brand Extensions
           </h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             To demonstrate the flexibility and scalability of the Awarri
             identity, the logo system was applied across a range of brand
             touchpoints. These extensions show how the identity lives beyond
@@ -188,7 +188,7 @@ export default function CreativeIdea() {
           <h2 className="text-xl font-semibold text-white">
             Visual System & Patterns
           </h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Patterns inspired by African symbols reinforce vision, growth, and
             community. A flexible colour palette allows the brand to adapt
             confidently across education, technology, and innovation platforms.

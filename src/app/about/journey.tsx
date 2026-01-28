@@ -5,25 +5,24 @@ const Journey = () => {
     {
       title: "From Humble beginnings",
       description:
-        "Our story begins in a small workplace in 2010. Lorem ipsum dolor sit amet consectetur. Sed sagittis cursus eleifend ut sit et.",
+        "Our story begins in a small workplace in 1999, founded on a simple belief: that the right strategy and creative spark can transform any challenge into opportunity. It was here, with a dedicated core team and big ambitions, that our end-user obsession philosophy took root.",
       image: "/about/humble-beginnings.png",
     },
     {
       title: "Milestone and Achievements",
       description:
-        "Our story begins in a small workplace in 2010. Lorem ipsum dolor sit amet consectetur. Sed sagittis cursus eleifend ut sit et.",
+        "Driven by that founding belief, our journey has been marked by significant growth and recognition. We’ve celebrated industry awards for innovation, successfully guided over 500 campaigns, formed strategic partnerships with major brands, and, most importantly, helped our clients achieve measurable and lasting impact.",
       image: "/about/milestone.png",
     },
     {
       title: "Our Global Reach",
-      description:
-        "Our story begins in a small workplace in 2010. Lorem ipsum dolor sit amet consectetur. Sed sagittis cursus eleifend ut sit et.",
+      description:"Today, our influence extends far beyond our original walls. With a network of partners and clients across two continents, we bring a uniquely adaptable perspective to every project. We operate globally but execute locally, ensuring our work resonates culturally and drives results in diverse markets from Lagos to London.",
       image: "/about/global-reach.png",
     },
     {
       title: "Looking Ahead",
       description:
-        "Our story begins in a small workplace in 2010. Lorem ipsum dolor sit amet consectetur. Sed sagittis cursus eleifend ut sit et.",
+        "Our vision for the future is clear: to continue pioneering the intersection of design, creativity, and human connection. We are investing in emerging technologies, nurturing the next generation of talent, and relentlessly focusing on building sustainable growth for our partners. The next chapter is about scaling our impact without ever losing the agile, passionate spirit we started with.",
       image: "/about/looking-ahead.png",
     },
   ];
@@ -34,7 +33,7 @@ const Journey = () => {
 
         {/* HEADER */}
         <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-20">
-          <h2 className="text-2xl md:text-4xl font-semibold text-white max-w-lg leading-snug">
+          <h2 className="text-xl md:text-3xl font-semibold text-white max-w-lg leading-snug">
             Our Journey: Key Points <br /> and Milestones
           </h2>
           <p className="text-gray-300 text-sm md:text-lg max-w-md">
@@ -43,7 +42,7 @@ const Journey = () => {
           </p>
         </div>
 
-        {/* LIST (Correct Alternating Layout) */}
+        {/* LIST */}
         <div className="space-y-20">
           {milestones.map((item, index) => {
             const isEven = index % 2 === 0; 
@@ -61,7 +60,7 @@ const Journey = () => {
                       <h3 className="text-white text-lg md:text-lg font-semibold mb-3">
                         {item.title}
                       </h3>
-                      <p className="text-gray-300 text-sm md:text-lg max-w-md leading-relaxed">
+                      <p className="text-gray-300 text-sm md:text-sm max-w-md leading-relaxed">
                         {item.description}
                       </p>
                     </div>
@@ -99,7 +98,7 @@ const Journey = () => {
                       <h3 className="text-white text-lg md:text-lg font-semibold mb-3">
                         {item.title}
                       </h3>
-                      <p className="text-gray-300 text-sm md:text-lg max-w-md leading-relaxed">
+                      <p className="text-gray-300 text-sm md:text-sm max-w-md leading-relaxed">
                         {item.description}
                       </p>
                     </div>

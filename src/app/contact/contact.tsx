@@ -24,9 +24,9 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 " style={{ backgroundColor: '#111111' }}>
+    <section className="py-20" style={{ backgroundColor: '#111111' }}>
       <div className="max-w-6xl mx-auto px-6 mt-18">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -37,7 +37,7 @@ export default function Contact() {
             <h2 className="text-3xl md:text-3xl font-bold text-white mb-6">
               Contact Us
             </h2>
-            <p className="text-gray-300 text-sm leading-relaxed mb-45">
+            <p className="text-gray-300 text-sm leading-relaxed mb-6">
               Together we turn the blank canvas into a masterpiece, your brand into a sensation and your website into an experience
             </p>
           </motion.div>

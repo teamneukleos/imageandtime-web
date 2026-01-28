@@ -20,7 +20,7 @@ export default function CreativeIdea() {
       </div>
 
       {/* IMAGE GRID - STACKED VERTICALLY */}
-      <div className="max-w-6xl mx-auto space-y-6 mb-28">
+      <div className="max-w-5xl mx-auto space-y-6 mb-28">
         <img
           src="/eTranzact/img1.png"
           alt="Creative Idea Image"

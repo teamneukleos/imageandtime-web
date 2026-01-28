@@ -8,52 +8,101 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const slides = [
   {
     image: "/images/hero-bg.jpg",
-    subtitle: (
+    subtitleDesktop: (
       <>
         We design brands,<br />not just campaigns.
+      </>
+    ),
+    subtitleMobile: (
+      <>
+        We design brands,
+        not just campaigns.
       </>
     ),
   },
   {
     image: "/images/herobg-2.png",
-    subtitle: (
+    subtitleDesktop: (
       <>
         We don't only make ads<br />that don't feel like ads.
+      </>
+    ),
+    subtitleMobile: (
+      <>
+        We don't only
+        make ads that don't
+        feel like ads.
       </>
     ),
   },
   {
     image: "/images/herobg3.png",
-    subtitle: (
+    subtitleDesktop: (
       <>
         We build brands people recognise,<br />trust, and want to belong to.
+      </>
+    ),
+    subtitleMobile: (
+      <>
+        We build brands
+        people recognise,
+        trust, and want
+        to belong to.
       </>
     ),
   },
   {
     image: "/images/herobg-4.jpg",
-    subtitle: (
+    subtitleDesktop: (
       <>
         And we design experiences that<br />make organisations feel human again.
+      </>
+    ),
+    subtitleMobile: (
+      <>
+        And we design
+        experiences that
+        make organisations
+        feel human again.
       </>
     ),
   },
   {
     image: "/images/hero-bg-5.jpg",
-    subtitle: (
+    subtitleDesktop: (
       <>
         Because humans are not creatures of logic.<br />They are creatures of emotion.
+      </>
+    ),
+    subtitleMobile: (
+      <>
+        Because humans
+        are not creatures
+        of logic. They are
+        creatures of emotion.
       </>
     ),
   },
   {
     image: "/images/hero-bg-6.png",
-    subtitle: (
+    subtitleDesktop: (
       <>
         Whether we're building a brand, a product,<br />
         or a workplace culture, we always start<br />
         with one question: What do you want<br />
         people to feel?
+      </>
+    ),
+    subtitleMobile: (
+      <>
+        Whether we're
+        building a brand,<br />
+        a product, or a
+        workplace culture,<br />
+        we always start with
+        one question: What
+        do you want people
+        to feel?
       </>
     ),
   },
@@ -85,6 +134,7 @@ const Hero = () => {
 
   return (
     <section className="relative w-full min-h-screen flex items-start justify-center text-white overflow-hidden">
+      
       {/* BACKGROUND */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <AnimatePresence mode="popLayout">
@@ -110,8 +160,12 @@ const Hero = () => {
       {/* OVERLAY */}
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
-      {/* CONTENT */}
-      <div className="w-full mt-80 px-6 md:px-8">
+      {/* GRADIENTS */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/60 to-transparent -z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/60 to-transparent -z-10" />
+
+      {/* CONTENT - DESKTOP */}
+      <div className="hidden md:block w-full mt-80 px-6 md:px-8">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -121,14 +175,32 @@ const Hero = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <p className="text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed">
-              {slide.subtitle}
+              {slide.subtitleDesktop}
             </p>
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* PREV / NEXT — HORIZONTAL */}
-      <div className="absolute bottom-56 right-6 md:right-12 flex items-center gap-6">
+      {/* CONTENT - MOBILE */}
+      <div className="block md:hidden w-full mt-64 px-6">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -50, opacity: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <p className="text-base max-w-xs leading-relaxed">
+              {slide.subtitleMobile}
+            </p>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {/* PREV / NEXT — DESKTOP ONLY */}
+      <div className="hidden md:flex absolute bottom-56 right-12 items-center gap-6">
+        
         {/* PREV */}
         <button
           onClick={handlePrev}
@@ -162,7 +234,6 @@ const Hero = () => {
           </AnimatePresence>
         </button>
 
-        {/* HORIZONTAL DIVIDER */}
         <div className="h-[1px] w-10 bg-white/50" />
 
         {/* NEXT */}
@@ -199,10 +270,28 @@ const Hero = () => {
         </button>
       </div>
 
+      {/* SCROLL INDICATOR */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 h-16 w-[2px] overflow-hidden">
+        <motion.div
+          className="w-full h-8 bg-white"
+          animate={{ y: ["-100%", "200%"] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "linear",
+            repeatDelay: 0.5,
+          }}
+        />
+      </div>
+
       {/* SLIDE COUNTER */}
       <div className="absolute bottom-8 left-6 md:left-8">
-        <span className="text-4xl font-bold">{currentSlide}</span>
-        <span className="text-sm text-white/50">/{totalSlides}</span>
+        <span className="text-4xl md:text-5xl lg:text-6xl font-bold">
+          {currentSlide}
+        </span>
+        <span className="text-xs md:text-sm text-white/50 ml-1">
+          /{totalSlides}
+        </span>
       </div>
     </section>
   );

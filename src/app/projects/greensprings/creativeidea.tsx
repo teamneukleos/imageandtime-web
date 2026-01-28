@@ -13,7 +13,7 @@ export default function CreativeIdea() {
             Creative Idea
           </h2>
 
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             For the school's 40th anniversary, the task was to create a campaign 
             video that would both honor its past and inspire its future. 
             The concept, titled Evergreen, was designed to highlight the institution's 
@@ -22,7 +22,7 @@ export default function CreativeIdea() {
             of storytelling, ensuring that the celebration felt authentic, memorable, and deeply connected to the school's identity.
           </p>
 
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The creative execution centered on current students, whose voices became 
             the bridge between generations. Through their words, the video brought to 
             life the rich history of the school, weaving together moments of tradition, 

@@ -30,25 +30,50 @@ export default function Services() {
           {/* RIGHT — ARTICLE */}
           <div className="md:col-span-5 md:col-start-8 space-y-8 text-gray-300 leading-relaxed text-sm md:text-base">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna 
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit 
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-              occaecat cupidatat non proident, sunt in culpa qui officia 
-              deserunt mollit anim id est laborum.
+              Our process is built on a simple, powerful DNA: 
+              L-E-D — Learning, End-user obsession, and Design. 
+              This triad fuels our every action and decision.
+
             </p>
 
+            <h2 className="text-2xl md:text-2xl lg:text-3xl font-light text-white leading-tight">Learning</h2>
+
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna 
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit 
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-              occaecat cupidatat non proident, sunt in culpa qui officia 
-              deserunt mollit anim id est laborum.
+              Here, Learning is not a department, it is 
+              our default mode. In a world of constant 
+              change, we cultivate a culture of relentless 
+              curiosity and intellectual agility, where every 
+              project, challenge, and user insight is a catalyst 
+              for growth. We operationalise this by listening deeply, 
+              synthesising continuously and adapting fearlessly, to keep our clients ahead of the curve.
+            </p>
+
+
+            <h2 className="text-2xl md:text-2xl lg:text-3xl font-light text-white leading-tight">End-user obsession</h2>
+
+            <p>
+             Our work begins and ends with a single focus: 
+             the human being at the other end of the experience. 
+             This is the uncompromising lens through which we evaluate 
+             every idea, message, and design. It moves us beyond 
+             assumptions into the realm of genuine empathy and insight, 
+             ensuring our solutions are not just creatively brilliant but 
+             deeply resonant and effective.
+
+            </p>
+
+            <h2 className="text-2xl md:text-2xl lg:text-3xl font-light text-white leading-tight">Design</h2>
+
+            <p>
+             For us, Design is our way of thinking, communicating, and doing. 
+             It is the discipline that transforms outstanding ideas into tangible reality, 
+             forges deeper connections between our clients and their audiences, and acts 
+             as the fundamental catalyst for commercial success.
+             Together, these three strands form the irreducible core of how we work. 
+             They are interwoven and interdependent, each strengthening the others 
+             to create transformative team, as well as experiences and drive growth 
+             from the inside out.
+
             </p>
           </div>
 

@@ -7,7 +7,7 @@ export default function CreativeIdea() {
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Despite having one of the highest suicide rates in Africa at 6.9
             per 100,000 people in 2019, a common misconception persists: 
             "suicide isn't a Nigerian thing," and those who take their own 

@@ -107,7 +107,7 @@ const ServicesGrid = () => {
               </h3>
 
               {/* Description Paragraphs */}
-              <div className="space-y-6 text-gray-300 text-base lg:text-base leading-relaxed">
+              <div className="space-y-6 text-gray-300 text-sm lg:text-base leading-relaxed">
                 {service.description.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
@@ -134,7 +134,7 @@ const ServicesGrid = () => {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      <span className="text-base">{item}</span>
+                      <span className="text-sm">{item}</span>
                     </div>
                   ))}
                 </div>

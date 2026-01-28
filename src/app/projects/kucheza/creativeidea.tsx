@@ -6,45 +6,69 @@ export default function CreativeIdea() {
   return (
     <section className="w-full bg-[#0D0D0D] py-14 md:py-28 px-6 md:px-12">
 
-      {/* ABOUT KUCHEZA GAMING - ALIGNED WITH KUCHEZA CONTENT */}
+      {/* ABOUT KUCHEZA */}
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">
             About Kucheza Gaming
           </h2>
 
-          <p className="text-gray-300 leading-relaxed">
-            Kucheza Gaming is a Lagos-based company focused on empowering African
-            youth through video games, esports, and STEM education. Operating at
-            the intersection of play, learning, and culture, Kucheza creates
-            pathways for young people aged 6–18 to build digital skills, explore
-            creativity, and engage with African stories through interactive
-            experiences.
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            Kucheza is an esports and games company focused on the African market.
+            Positioned as an African brand within the global competitive gaming
+            space, Kucheza creates gaming and learning experiences for young
+            people aged 6–18.
           </p>
 
-          <p className="text-gray-300 leading-relaxed">
-            Through game development, youth esports tournaments, and educational
-            programs — including Unreal Engine training and game-based learning —
-            Kucheza is helping to shape a sustainable gaming ecosystem and prepare
-            the next generation for careers in the digital economy.
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            Operating at the intersection of gaming, education, and culture,
+            Kucheza empowers young Africans through esports competitions,
+            game-based learning, and digital skill development.
           </p>
         </div>
       </div>
 
-      {/* THE TASK */}
-      <div className="max-w-5xl mx-auto mb-20">
+      {/* BIG IDEA */}
+      <div className="max-w-5xl mx-auto mb-16">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">
-            The Task
+            Big Idea
           </h2>
 
-          <p className="text-gray-300 leading-relaxed">
-            The task was to design a cohesive brand identity and design system
-            that could support Kucheza's growing ecosystem — spanning esports,
-            education, physical spaces, and digital platforms — while remaining
-            engaging, youthful, and culturally relevant.
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            At the core of Kucheza’s identity is the idea that no two games — and
+            no two players — ever experience a game the same way. Games have
+            multiple endings, countless variables, and unique paths shaped by
+            individual choices.
           </p>
         </div>
+      </div>
+
+
+      {/* CORE ROUTES */}
+      <div className="max-w-5xl mx-auto mb-16">
+        <div className="max-w-4xl space-y-6">
+          <h2 className="text-xl font-semibold text-white">
+            Logo concept 
+          </h2>
+
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            The identity was designed around the idea of multiple routes and
+            outcomes. Every interaction with the brand reflects the diversity
+            of gameplay experiences — from esports tournaments and educational
+            programs to physical gaming spaces and digital platforms.
+          </p>
+        </div>
+      </div>
+
+      {/* CORE ROUTES IMAGES */}
+      <div className="max-w-5xl mx-auto mb-28 flex justify-center">
+        <img
+          src="/kucheza/kucheza-sketch.png"
+          alt="Esports route"
+          className="w-full h-auto object-cover"
+        />
+        
       </div>
 
       {/* CREATIVE IDEA */}
@@ -54,109 +78,141 @@ export default function CreativeIdea() {
             Creative Idea
           </h2>
 
-          <p className="text-gray-300 leading-relaxed">
-            Deliver a strong and distinctive brand identity supported by a
-            consistent and flexible design architecture for an esports brand.
-            The system needed to scale effortlessly across digital products,
-            tournaments, learning environments, and community initiatives.
-          </p>
-
-          <p className="text-gray-300 leading-relaxed">
-            The identity was designed to feel energetic, playful, and bold —
-            reflecting the spirit of gaming — while still structured enough to
-            function across education, competition, and professional spaces.
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            Inspired by the pixel — the smallest building block of digital
+            worlds — the Kucheza identity is constructed from modular blocks,
+            grids, and geometric forms.
           </p>
         </div>
       </div>
 
-      {/* CREATIVE IDEA IMAGE */}
-      <div className="max-w-4xl mx-auto mb-28 flex justify-center">
+      {/* FINAL LOGO */}
+      <div className="max-w-5xl mx-auto mb-12">
+        <div className="max-w-4xl space-y-6">
+          <h2 className="text-xl font-semibold text-white">Final Logo</h2>
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            The Kucheza logo is built as a modular system inspired by the idea of gaming as a set of building blocks. Its geometric forms are bold, flexible, and structured, allowing the identity to adapt seamlessly across different layouts, formats, and environments. The logo reflects creativity, play, and construction—core to Kucheza’s mission of shaping the future of gaming culture.
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-8xl mx-auto mb-24 flex flex-col items-center gap-10">
         <img
-          src="/kucheza/img2.png"
-          alt="Kucheza Gaming creative direction"
-          className="w-full max-w-4xl h-auto object-cover"
+          src="/kucheza/kucheza-logo.png"
+          alt="Final Kucheza logo"
+          className="w-full max-w-md h-auto object-contain"
+        />
+
+        <img
+          src="/kucheza/kucheza-logo-2-column.png"
+          alt="Final Kucheza logo"
+          className="w-full max-w-md h-auto object-contain"
+        />
+
+        <img
+          src="/kucheza/kucheza-logo-3-column.png"
+          alt="Final Kucheza logo"
+          className="w-full max-w-md h-auto object-contain"
         />
       </div>
 
-      {/* LOGO & BRAND IDENTITY */}
+      {/* BRAND APPLICATIONS */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">
-            Logo & Brand Identity
+            Brand Applications
           </h2>
 
-          <p className="text-gray-300 leading-relaxed">
-            The Kucheza logo and visual language were designed to feel modern,
-            expressive, and youth-centric. Bold typography, vibrant colours,
-            and graphic elements inspired by gaming culture create a recognisable
-            system that works across screens, merchandise, and physical spaces.
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            The identity was applied across merchandise, medals, posters,
+            apparel, and three-dimensional expressions.
           </p>
         </div>
       </div>
 
-      {/* LOGO / IDENTITY IMAGES (STACKED) */}
-      <div className="max-w-xl mx-auto mb-28 space-y-8">
+      {/* BRAND APPLICATION GRID */}
+     
+      <div className="max-w-5xl mx-auto mb-28 flex justify-center">
         <img
-          src="/kucheza/logo-1.png"
-          alt="Kucheza Gaming logo exploration"
-          className="w-full h-auto object-contain"
-        />
-        
-      </div>
-
-      {/* BRAND EXTENSIONS */}
-      <div className="max-w-5xl mx-auto mb-16">
-        <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">
-            Brand Extensions
-          </h2>
-
-          <p className="text-gray-300 leading-relaxed">
-            The brand system was extended across a range of touchpoints —
-            including esports tournaments, educational programs, marketing
-            materials, and physical installations — demonstrating flexibility
-            while maintaining consistency and recognition.
-          </p>
-        </div>
-      </div>
-
-      {/* BRAND EXTENSION IMAGES */}
-      <div className="max-w-xl mx-auto mb-28 space-y-8">
-        <img
-          src="/kucheza/kucheza-tote.png"
-          alt="Kucheza brand extension"
+          src="/kucheza/kucheza-tshirt.jpg"
+          alt="T-shirt"
           className="w-full h-auto object-cover"
         />
-        
       </div>
 
-      {/* GAMING LAB & SPATIAL DESIGN */}
+      <div className="max-w-xl mx-auto mb-28 flex justify-center">
+        <img
+          src="/kucheza/kucheza-tote.jpg"
+          alt="Tote bag"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+      <div className="max-w-xl mx-auto mb-28 flex flex-col gap-8">
+        <img
+          src="/kucheza/kucheza-outside.jpg"
+          alt="Kucheza poster 1"
+          className="w-full h-auto object-cover"
+        />
+
+        <img
+          src="/kucheza/kucheza-socials.jpg"
+          alt="Kucheza poster 2"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+
+      <div className="max-w-5xl mx-auto mb-28 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <img
+          src="/kucheza/kucheza-poster1.jpg"
+          alt="Kucheza poster 1"
+          className="w-full h-auto object-cover"
+        />
+
+        <img
+          src="/kucheza/kucheza-poster2.png"
+          alt="Kucheza poster 2"
+          className="w-full h-auto object-cover"
+        />
+
+        <img
+          src="/kucheza/kucheza-poster3.png"
+          alt="Kucheza poster 3"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+
+
+
+
+
+
+      {/* GAMING LAB */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">
-            Gaming Lab & Spatial Design
+            Spatial Design & Gaming Labs
           </h2>
 
-          <p className="text-gray-300 leading-relaxed">
-            Beyond digital platforms, the identity was translated into physical
-            spaces — including gaming labs and training environments. Consideration
-            was given to layout design, capacity planning, equipment placement,
-            and visual zoning to create immersive, functional learning spaces
-            for young gamers.
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            The identity extends into physical gaming labs, applying the same
+            grid logic and visual language to immersive learning spaces.
           </p>
         </div>
       </div>
 
-      {/* GAMING LAB IMAGES */}
-      <div className="max-w-3xl mx-auto space-y-8">
+      {/* LAB IMAGES */}
+      <div className="max-w-4xl mx-auto space-y-8">
         <img
           src="/kucheza/lab-1.png"
-          alt="Kucheza gaming lab design"
+          alt="Gaming lab"
           className="w-full h-auto object-cover"
         />
         <img
           src="/kucheza/lab-2.png"
-          alt="Kucheza gaming lab layout"
+          alt="Gaming lab layout"
           className="w-full h-auto object-cover"
         />
       </div>
