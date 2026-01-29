@@ -182,7 +182,7 @@ const Hero = () => {
       </div>
 
       {/* CONTENT - MOBILE */}
-      <div className="block md:hidden w-full mt-64 px-6">
+      <div className="block md:hidden w-full mt-80 px-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
