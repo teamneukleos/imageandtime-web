@@ -31,7 +31,7 @@ const eTranzactContent = () => {
         {/* IMAGE SECTION */}
         <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/eTranzact/etranzact.png"
+            src="/eTranzact/eTranzact.png"
             alt="eTranzact Campaign Image"
             fill
             className="object-cover"

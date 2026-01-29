@@ -34,7 +34,7 @@ const works = [
     title: "",
     headline: " Serious tech, finally explained",
     emotive: "i get it now",
-    image: "/eTranzact/etranzact-bg.png",
+    image: "/eTranzact/eTranzact-bg.png",
     link: "/projects/eTranzact"
   },
   {
