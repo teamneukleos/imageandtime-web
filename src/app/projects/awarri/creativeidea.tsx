@@ -5,7 +5,7 @@ import React from "react";
 export default function CreativeIdea() {
   return (
     <section className="w-full bg-[#0D0D0D] py-14 md:py-28 px-6 md:px-12">
-      {/* ABOUT AWARRI - ALIGNED WITH AWARRI CONTENT */}
+      {/* ABOUT AWARRI */}
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">About Awarri</h2>
@@ -128,58 +128,61 @@ export default function CreativeIdea() {
       </div>
 
       
-      <div className="max-w-3xl mx-auto mb-28 space-y-16">
+      <div className="max-w-5xl mx-auto mb-28 grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        
-        <img
-          src="/awarri/awarri-comms.png"
-          alt="Awarri brand communication"
-          className="w-full h-auto object-cover"
-        />
+  {/* LEFT COLUMN */}
+  <div className="flex flex-col gap-8">
+    <img
+      src="/awarri/awarri-comms.png"
+      alt="Awarri brand communication"
+      className="w-full h-[360px] object-cover"
+    />
 
-        
-        <img
-          src="/awarri/awarri2.png"
-          alt="Awarri brand"
-          className="w-full h-auto object-cover"
-        />
+    <img
+      src="/awarri/awarri-office.png"
+      alt="Awarri office branding"
+      className="w-full h-[260px] object-cover"
+    />
 
-        
-        <img
-          src="/awarri/awarri-billboards.png"
-          alt="Awarri billboard application"
-          className="w-full h-auto object-cover"
-        />
+    <img
+      src="/awarri/awarri-shirt.png"
+      alt="Awarri apparel branding"
+      className="w-full h-[300px] object-cover"
+    />
+  </div>
 
-        {/* LOGO MOTION (GIF) */}
-        <img
-          src="/awarri/awarri2.gif"
-          alt="Awarri logo motion application"
-          className="w-full max-w-md mx-auto h-auto object-contain"
-        />
+  {/* RIGHT COLUMN */}
+  <div className="flex flex-col gap-8">
+    <img
+      src="/awarri/awarri-billboards.png"
+      alt="Awarri billboard application"
+      className="w-full h-[300px] object-cover"
+    />
 
-        
-        <img
-          src="/awarri/awarri1.png"
-          alt="Awarri brand"
-          className="w-full h-auto object-cover"
-        />
+    {/* LOGO MOTION (GIF) */}
+    <div className="w-full flex justify-center">
+      <img
+        src="/awarri/awarri2.gif"
+        alt="Awarri logo motion application"
+        className="w-full max-w-sm h-auto object-contain"
+      />
+    </div>
 
-        
-        <img
-          src="/awarri/awarri-waterbottle.jpg"
-          alt="Awarri water bottle branding"
-          className="w-full h-auto object-cover"
-        />
+    <img
+      src="/awarri/awarri-waterbottle.jpg"
+      alt="Awarri water bottle branding"
+      className="w-full h-[260px] object-cover"
+    />
 
-        
-        <img
-          src="/awarri/awarri3.png"
-          alt="Awarri environmental branding"
-          className="w-full h-auto object-cover"
-        />
+    <img
+      src="/awarri/awarri3.png"
+      alt="Awarri environmental branding"
+      className="w-full h-[340px] object-cover"
+    />
+  </div>
 
-      </div>
+</div>
+
 
 
       {/* VISUAL SYSTEM */}

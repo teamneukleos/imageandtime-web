@@ -42,10 +42,33 @@ const works = [
     title: "",
     headline: "where gaming meets culture",
     emotive: "i belong here",
-    image: "/kucheza/kucheza-bg.png",
+    image: "/kucheza/kucheza-outside.jpg",
     link: "/projects/kucheza"
   },
-  
+  {
+    brand: "One Alpha",
+    title: "",
+    headline: "",
+    emotive: "",
+    image: "/one-alpha/one-alpha-bg.png",
+    link: "/projects/one-alpha"
+  },
+  {
+    brand: "Bukka Hut",
+    title: "",
+    headline: "",
+    emotive: "",
+    image: "/bukka-hut/bukka-hut-bg.png",
+    link: "/projects/bukka-hut"
+  },
+  {
+    brand: "Mr Biggs",
+    title: "",
+    headline: "",
+    emotive: "",
+    image: "/mr-biggs/office-1.jpg",
+    link: "/projects/mr-biggs"
+  },
 ];
 
 const OurWork = () => {

@@ -8,7 +8,7 @@ const EmployeeContent = () => {
 
   return (
     <section className="w-full bg-[#0D0D0D] py-32 px-6 md:px-12">
-      {/* SHARED CONTAINER (aligns text with image) */}
+      {/* SHARED CONTAINER */}
       <div className="max-w-5xl mx-auto">
         
         {/* HEADER / TEXT CONTENT */}
@@ -33,7 +33,7 @@ const EmployeeContent = () => {
         {/* IMAGE SECTION */}
         <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/employee-awayday/employee.png"
+            src="/employee-awayday/image.png"
             alt="Employee Awayday Image"
             fill
             className="object-cover"

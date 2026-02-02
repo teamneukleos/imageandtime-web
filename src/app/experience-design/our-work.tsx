@@ -45,6 +45,14 @@ const works = [
     image: "/project-retreat/project-retreat-bg.png",
     link: "/projects/project-retreat"
   },
+  {
+    brand: "Seplat",
+    title: "Seplat wellness fair",
+    headline: "",
+    emotive: "",
+    image: "/wellness-fair/wellness-fair-bg.jpg",
+    link: "/projects/wellness-fair"
+  },
   
 ];
 
