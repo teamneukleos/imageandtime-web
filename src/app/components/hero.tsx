@@ -121,7 +121,7 @@ const Hero = () => {
             exit={{ x: -50, opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <p className="text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed">
+            <p className="text-2xl md:text-2xl lg:text-3xl max-w-2xl font-semibold leading-relaxed">
               {slide.subtitleDesktop}
             </p>
           </motion.div>
@@ -138,7 +138,7 @@ const Hero = () => {
             exit={{ x: -50, opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <p className="text-base max-w-xs leading-relaxed">
+            <p className="text-2xl max-w-xs leading-relaxed font-semibold">
               {slide.subtitleMobile}
             </p>
           </motion.div>
