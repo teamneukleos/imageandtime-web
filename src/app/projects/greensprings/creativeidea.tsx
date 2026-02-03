@@ -9,32 +9,29 @@ export default function CreativeIdea() {
       {/* SECTION TEXT */}
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">
-            Creative Idea
-          </h2>
-
+          
+          {/* The Problem */}
+          <h2 className="text-xl font-semibold text-white">The Problem</h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            For the school's 40th anniversary, the task was to create a campaign 
-            video that would both honor its past and inspire its future. 
-            The concept, titled Evergreen, was designed to highlight the institution's 
-            enduring legacy and the values that have remained constant over the decades. 
-            By choosing a spoken word format, the campaign tapped into the emotional power 
-            of storytelling, ensuring that the celebration felt authentic, memorable, and deeply connected to the school's identity.
+            For its 40th anniversary, Greensprings School needed a campaign that celebrated its legacy without feeling nostalgic or distant from the present. The challenge was to honor the past while inspiring the future.
           </p>
 
+          {/* Insight */}
+          <h2 className="text-xl font-semibold text-white mt-6">Insight</h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            The creative execution centered on current students, whose voices became 
-            the bridge between generations. Through their words, the video brought to 
-            life the rich history of the school, weaving together moments of tradition, 
-            achievement, and community spirit. This approach not only showcased the timeless 
-            values that define the institution but also emphasized its lasting impact across 
-            generations, positioning the school as a place where heritage and progress coexist seamlessly.
+            A school’s true legacy lives through its students. Values endure when they are passed on, not just remembered.
           </p>
+
+          {/* Big Idea */}
+          <h2 className="text-xl font-semibold text-white mt-6">Big Idea</h2>
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            <strong>EVERGREEN</strong><br />
+            We told the story through the voices of current students. Using spoken word, the film connected generations, weaving together tradition, achievement, and community. Students became the bridge between the school’s past and its future, bringing its values to life through lived experience. The result was a celebration that felt authentic, emotional, and forward-looking, positioning Greensprings as a place where heritage and progress coexist.
+          </p>
+
         </div>
       </div>
-
       
-
     </section>
   );
 }

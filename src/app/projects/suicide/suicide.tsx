@@ -48,8 +48,8 @@ const SuicideContent = () => {
           </p>
         </div>
 
-        {/* VIDEOS – 2 COLUMN */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* VIDEOS – STACKED */}
+        <div className="space-y-6">
           {videos.map((video) => (
             <div
               key={video.id}

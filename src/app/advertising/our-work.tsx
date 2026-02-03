@@ -61,6 +61,15 @@ const works = [
     image: "/work/sickle-cell.png",
     link: "/projects/sickle-cell"
   },
+
+  {
+    brand: "Lacasera",
+    title: "This is not a full stop",
+    headline: "This is not a full stop",
+    emotive: "",
+    image: "/work/lacasera.png",
+    link: "/projects/lacasera"
+  },
   
 ];
 

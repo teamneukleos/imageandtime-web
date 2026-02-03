@@ -10,13 +10,14 @@ const slides = [
     image: "/images/hero-bg.jpg",
     subtitleDesktop: (
       <>
-        We design brands,<br />not just campaigns.
+        We make brands people<br />trust and love.
       </>
     ),
     subtitleMobile: (
       <>
-        We design brands,
-        not just campaigns.
+        We make brands
+        people trust
+        and love.
       </>
     ),
   },
@@ -24,14 +25,15 @@ const slides = [
     image: "/images/herobg-2.png",
     subtitleDesktop: (
       <>
-        We don't only make ads<br />that don't feel like ads.
+        We design experiences<br />that feel human.
       </>
     ),
     subtitleMobile: (
       <>
-        We don't only
-        make ads that don't
-        feel like ads.
+        We design
+        experiences
+        that feel
+        human.
       </>
     ),
   },
@@ -39,74 +41,19 @@ const slides = [
     image: "/images/herobg3.png",
     subtitleDesktop: (
       <>
-        We build brands people recognise,<br />trust, and want to belong to.
+        We create ads that<br />don’t feel like ads.
       </>
     ),
     subtitleMobile: (
       <>
-        We build brands
-        people recognise,
-        trust, and want
-        to belong to.
-      </>
-    ),
-  },
-  {
-    image: "/images/herobg-4.jpg",
-    subtitleDesktop: (
-      <>
-        And we design experiences that<br />make organisations feel human again.
-      </>
-    ),
-    subtitleMobile: (
-      <>
-        And we design
-        experiences that
-        make organisations
-        feel human again.
-      </>
-    ),
-  },
-  {
-    image: "/images/hero-bg-5.jpg",
-    subtitleDesktop: (
-      <>
-        Because humans are not creatures of logic.<br />They are creatures of emotion.
-      </>
-    ),
-    subtitleMobile: (
-      <>
-        Because humans
-        are not creatures
-        of logic. They are
-        creatures of emotion.
-      </>
-    ),
-  },
-  {
-    image: "/images/hero-bg-6.png",
-    subtitleDesktop: (
-      <>
-        Whether we're building a brand, a product,<br />
-        or a workplace culture, we always start<br />
-        with one question: What do you want<br />
-        people to feel?
-      </>
-    ),
-    subtitleMobile: (
-      <>
-        Whether we're
-        building a brand,<br />
-        a product, or a
-        workplace culture,<br />
-        we always start with
-        one question: What
-        do you want people
-        to feel?
+        We create ads
+        that don’t feel
+        like ads.
       </>
     ),
   },
 ];
+
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -285,14 +232,15 @@ const Hero = () => {
       </div>
 
       {/* SLIDE COUNTER */}
-      <div className="absolute bottom-8 left-6 md:left-8">
-        <span className="text-4xl md:text-5xl lg:text-6xl font-bold">
-          {currentSlide}
-        </span>
-        <span className="text-xs md:text-sm text-white/50 ml-1">
-          /{totalSlides}
-        </span>
-      </div>
+      <div className="absolute bottom-8 left-6 md:left-8 flex items-start">
+  <span className="text-4xl md:text-5xl lg:text-6xl font-bold leading-none">
+    {currentSlide}
+  </span>
+
+  <span className="ml-1 text-base md:text-base text-white/50 relative -top-1">
+    /{totalSlides}
+  </span>
+</div>
     </section>
   );
 };

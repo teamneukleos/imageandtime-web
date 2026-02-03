@@ -1,13 +1,20 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { DM_Serif_Display, DM_Sans } from 'next/font/google';
 import Navbar from './components/navbar';
 import NavbarGlow from './components/navbarglow';
 import Footer from './components/footer';
 
-const poppins = Poppins({
+const dmSerif = DM_Serif_Display({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400'],
+  weight: ['400'],
+  variable: '--font-dm-serif',
+});
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-dm-sans',
 });
 
 export const metadata: Metadata = {
@@ -27,7 +34,8 @@ export default function RootLayout({
       </head>
       <body
         className={`
-          ${poppins.className}
+          ${dmSans.variable} ${dmSerif.variable}
+          font-sans
           bg-white text-gray-900
           dark:bg-[#0f172a] dark:text-gray-100
           transition-colors duration-300

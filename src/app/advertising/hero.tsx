@@ -41,7 +41,7 @@ export default function Hero() {
           >
             People hate ads.
             <br />
-            <span className="text-gray-300">Brands can not do them.</span>
+            <span className="text-gray-300">Brands can not <span className="italic">not</span> do them.</span>
           </motion.h1>
 
           {/* Subheadline */}

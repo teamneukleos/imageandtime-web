@@ -8,47 +8,100 @@ export default function CreativeIdea() {
       
       {/* SECTION TEXT */}
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
-        <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">
-            Creative Idea
-          </h2>
+        <div className="max-w-4xl space-y-10">
+          
+          
 
-          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            We launched "One Less Worry. One More Reason to Feel at Home", a fully integrated campaign rooted 
-            in storytelling and cultural resonance. On-air, the initiative featured 
-            TVCs and in-show integrations that highlighted authentic family scenarios, 
-            demonstrating how inverter appliances ease daily stress and bring comfort into everyday life. 
-            To extend engagement beyond traditional media, we introduced a guerrilla scavenger hunt during peak moments like the Saturday night party, 
-            where hidden clues unlocked exciting rewards and created memorable digital/BBN interactions.
-          </p>
+          {/* THE PROBLEM */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold uppercase tracking-wider text-white">
+              The Problem
+            </h3>
 
-          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            The campaign also leaned heavily on influencer storytelling, led by Stan Nze, who shared relatable slice-of-life narratives centered on comfort, 
-            trust, and energy efficiency. On social media, activations such as polls, memes, and behind-the-scenes content reframed appliances as more than functional machines, 
-            positioning them as integral to emotional family life. Together, these elements built a cohesive narrative that connected with audiences on multiple levels, blending entertainment,
-            interactivity, and cultural relevance.
-          </p>
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+              Home is meant to be a place of comfort, relief, and escape from daily
+              stress. But for many Nigerian families, frequent power outages disrupt
+              that feeling. When the lights go out, home stops feeling like home.
+            </p>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+              For Haier Thermocool, a brand that has served Nigerian households for
+              over 50 years, this was a daily reality for its consumers. Yet inverter
+              technology remained poorly understood, with appliances largely sold on
+              features rather than lived benefits.
+            </p>
+          </div>
+
+          {/* INSIGHT */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold uppercase tracking-wider text-white">
+              Insight
+            </h3>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+              Nigerian families do not just want appliances that work — they want
+              peace of mind.
+            </p>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+              Power failure brings stress, noise, fuel costs, and rising electricity
+              bills. Any solution that reduces these pressures instantly feels like
+              relief. Appliances that quietly adapt to blackouts while lowering
+              energy costs restore comfort, not just convenience.
+            </p>
+          </div>
+
+          {/* BIG IDEA */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold uppercase tracking-wider text-white">
+              Big Idea
+            </h3>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed font-medium">
+              Let Home Feel Like Home
+            </p>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+              We stopped selling appliances and started selling relief. Through
+              storytelling, we showed how Haier Thermocool inverter appliances run
+              seamlessly on generators and inverters while cutting energy bills by
+              up to 50%. Even during blackouts, life at home could continue
+              uninterrupted.
+            </p>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+              The campaign rolled out like a cinematic release — teasing audiences
+              with a lead character, building anticipation through influencers, and
+              funnelling interest via programmatic ads to social platforms. We
+              extended the story into Big Brother Naija, embedding it into everyday
+              Nigerian life through trusted voices like Stan Nze.
+            </p>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+              From TV placements to vox pops and social conversations, every
+              touchpoint educated, built trust, and converted curiosity into action.
+              The result was a shift in perception — from appliances to peace of
+              mind, and from power problems to comfort that lasts.
+            </p>
+          </div>
+
         </div>
       </div>
 
-
       {/* METRICS SECTION */}
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-12">
-        {/* Impressions */}
         <div>
           <p className="text-white text-base mb-2">Impressions</p>
           <p className="text-[#CC111A] text-3xl font-semibold">37M+</p>
         </div>
 
-        {/* Reach */}
         <div>
           <p className="text-white text-base mb-2">Reach</p>
           <p className="text-[#CC111A] text-3xl font-semibold">22M+</p>
         </div>
 
-        {/* Views / Plays */}
         <div>
-          <p className="text-white text-base mb-2">Views/Plays</p>
+          <p className="text-white text-base mb-2">Views / Plays</p>
           <p className="text-[#CC111A] text-3xl font-semibold">17M+</p>
         </div>
       </div>

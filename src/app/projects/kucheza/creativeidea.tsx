@@ -31,9 +31,7 @@ export default function CreativeIdea() {
       {/* BIG IDEA */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">
-            Big Idea
-          </h2>
+          <h2 className="text-xl font-semibold text-white">Big Idea</h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             At the core of Kucheza’s identity is the idea that no two games — and
@@ -44,13 +42,10 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-
-      {/* CORE ROUTES */}
+      {/* LOGO CONCEPT */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">
-            Logo concept 
-          </h2>
+          <h2 className="text-xl font-semibold text-white">Logo concept</h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The identity was designed around the idea of multiple routes and
@@ -61,22 +56,19 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      {/* CORE ROUTES IMAGES */}
+      {/* LOGO SKETCH */}
       <div className="max-w-5xl mx-auto mb-28 flex justify-center">
         <img
           src="/kucheza/kucheza-sketch.png"
-          alt="Esports route"
+          alt="Kucheza logo sketch"
           className="w-full h-auto object-cover"
         />
-        
       </div>
 
       {/* CREATIVE IDEA */}
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">
-            Creative Idea
-          </h2>
+          <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Inspired by the pixel — the smallest building block of digital
@@ -90,29 +82,31 @@ export default function CreativeIdea() {
       <div className="max-w-5xl mx-auto mb-12">
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Final Logo</h2>
+
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            The Kucheza logo is built as a modular system inspired by the idea of gaming as a set of building blocks. Its geometric forms are bold, flexible, and structured, allowing the identity to adapt seamlessly across different layouts, formats, and environments. The logo reflects creativity, play, and construction—core to Kucheza’s mission of shaping the future of gaming culture.
+            The Kucheza logo is built as a modular system inspired by the idea of
+            gaming as a set of building blocks. Its geometric forms are bold,
+            flexible, and structured, allowing the identity to adapt seamlessly
+            across different layouts, formats, and environments.
           </p>
         </div>
       </div>
 
-      <div className="max-w-8xl mx-auto mb-24 flex flex-col items-center gap-10">
+      <div className="max-w-5xl mx-auto mb-24 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
         <img
           src="/kucheza/kucheza-logo.png"
-          alt="Final Kucheza logo"
-          className="w-full max-w-md h-auto object-contain"
+          alt="Kucheza logo"
+          className="w-full h-auto object-contain"
         />
-
         <img
           src="/kucheza/kucheza-logo-2-column.png"
-          alt="Final Kucheza logo"
-          className="w-full max-w-md h-auto object-contain"
+          alt="Kucheza logo layout"
+          className="w-full h-auto object-contain"
         />
-
         <img
           src="/kucheza/kucheza-logo-3-column.png"
-          alt="Final Kucheza logo"
-          className="w-full max-w-md h-auto object-contain"
+          alt="Kucheza logo grid system"
+          className="w-full h-auto object-contain"
         />
       </div>
 
@@ -131,63 +125,45 @@ export default function CreativeIdea() {
       </div>
 
       {/* BRAND APPLICATION GRID */}
-     
-      <div className="max-w-5xl mx-auto mb-28 flex justify-center">
-        <img
-          src="/kucheza/kucheza-tshirt.jpg"
-          alt="T-shirt"
-          className="w-full h-auto object-cover"
-        />
-      </div>
+      <div className="max-w-5xl mx-auto mb-28 grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
+        <div className="flex flex-col gap-6">
+          <img
+            src="/kucheza/kucheza-tshirt.jpg"
+            alt="Kucheza T-shirt"
+            className="w-full h-auto object-cover"
+          />
+          <img
+            src="/kucheza/kucheza-billboard.jpg"
+            alt="Kucheza billboard"
+            className="w-full h-auto object-cover"
+          />
+        </div>
 
-      <div className="max-w-xl mx-auto mb-28 flex justify-center">
         <img
           src="/kucheza/kucheza-tote.jpg"
-          alt="Tote bag"
+          alt="Kucheza tote bag"
           className="w-full h-auto object-cover"
         />
-      </div>
 
-      <div className="max-w-xl mx-auto mb-28 flex flex-col gap-8">
         <img
           src="/kucheza/kucheza-outside.jpg"
-          alt="Kucheza poster 1"
+          alt="Kucheza outdoor poster"
           className="w-full h-auto object-cover"
         />
 
         <img
           src="/kucheza/kucheza-socials.jpg"
-          alt="Kucheza poster 2"
+          alt="Kucheza social visuals"
           className="w-full h-auto object-cover"
         />
       </div>
 
-
+      {/* POSTERS */}
       <div className="max-w-5xl mx-auto mb-28 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <img
-          src="/kucheza/kucheza-poster1.jpg"
-          alt="Kucheza poster 1"
-          className="w-full h-auto object-cover"
-        />
-
-        <img
-          src="/kucheza/kucheza-poster2.png"
-          alt="Kucheza poster 2"
-          className="w-full h-auto object-cover"
-        />
-
-        <img
-          src="/kucheza/kucheza-poster3.png"
-          alt="Kucheza poster 3"
-          className="w-full h-auto object-cover"
-        />
+        <img src="/kucheza/kucheza-poster1.jpg" className="w-full h-auto object-cover" />
+        <img src="/kucheza/kucheza-poster2.png" className="w-full h-auto object-cover" />
+        <img src="/kucheza/kucheza-poster3.png" className="w-full h-auto object-cover" />
       </div>
-
-
-
-
-
-
 
       {/* GAMING LAB */}
       <div className="max-w-5xl mx-auto mb-16">
@@ -203,18 +179,9 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      {/* LAB IMAGES */}
       <div className="max-w-4xl mx-auto space-y-8">
-        <img
-          src="/kucheza/lab-1.png"
-          alt="Gaming lab"
-          className="w-full h-auto object-cover"
-        />
-        <img
-          src="/kucheza/lab-2.png"
-          alt="Gaming lab layout"
-          className="w-full h-auto object-cover"
-        />
+        <img src="/kucheza/lab-1.png" className="w-full h-auto object-cover" />
+        <img src="/kucheza/lab-2.png" className="w-full h-auto object-cover" />
       </div>
 
     </section>

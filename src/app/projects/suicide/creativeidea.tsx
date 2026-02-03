@@ -3,23 +3,30 @@ import React from "react";
 export default function CreativeIdea() {
   return (
     <section className="w-full bg-[#0D0D0D] py-28 px-6 md:px-12">
-      {/* SECTION TEXT - ALIGNED WITH SUICIDE CONTENT */}
+      
+      {/* SECTION TEXT */}
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
+          
+          {/* The Problem */}
+          <h2 className="text-xl font-semibold text-white">The Problem</h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Despite having one of the highest suicide rates in Africa at 6.9
-            per 100,000 people in 2019, a common misconception persists: 
-            "suicide isn't a Nigerian thing," and those who take their own 
-            lives are viewed as weak. As a result, many turn to the internet
-            for answers. Noticing the internet's vast review culture, we decided 
-            to apply this concept to suicide prevention. Statistics reveal that nine 
-            out of ten people who attempt suicide and survive never try again, making 
-            their stories a powerful prevention tool. Led by influencer Real Warri Pikin, 
-            a suicide survivor herself, we launched "The Suicide Review - I Tried Suicide 
-            So You Don't Have To." This platform collects stories from Nigerian survivors, 
-            serving as a vital resource for prevention.
+            Nigeria has one of the highest suicide rates in Africa, yet suicide is often dismissed as un-Nigerian or a sign of weakness. This stigma prevents open conversation and delays intervention. Many people seeking answers turn to the internet instead of professional help.
           </p>
+
+          {/* Insight */}
+          <h2 className="text-xl font-semibold text-white mt-6">Insight</h2>
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            Survivors are powerful prevention tools. Statistics show that nine out of ten people who survive a suicide attempt never try again. Their stories can save lives if shared honestly.
+          </p>
+
+          {/* Big Idea */}
+          <h2 className="text-xl font-semibold text-white mt-6">Big Idea</h2>
+          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            <strong>THE SUICIDE REVIEW</strong><br />
+            We applied review culture to suicide prevention. Led by Real Warri Pikin, a survivor herself, we created a platform where Nigerians who attempted suicide shared honest reviews of the experience—not to shock, but to warn, educate, and prevent. By reframing survival as expertise, the campaign challenged stigma and created a resource rooted in lived truth.
+          </p>
+
         </div>
       </div>
 

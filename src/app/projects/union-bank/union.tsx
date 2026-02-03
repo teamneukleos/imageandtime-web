@@ -11,25 +11,24 @@ const UnionContent = () => {
       id: 1,
       src: "https://www.youtube.com/embed/8F36hHdFHoQ?si=QgDbDhYaoixbTEXV&autoplay=1",
       thumbnail: "/union/thumbnail.png",
-      title: "Union Bank Video 1"
+      title: "Union Bank Video 1",
     },
     {
       id: 2,
       src: "https://www.youtube.com/embed/1IpYfYjWQIk?si=FOFTm8GU_1m7eWQi&autoplay=1",
       thumbnail: "/union/thumbnail2.png",
-      title: "Union Bank Video 2"
-    }
+      title: "Union Bank Video 2",
+    },
   ];
 
   return (
     <section className="w-full bg-[#0D0D0D] py-32 px-6 md:px-12">
-      {/* SHARED CONTAINER (aligns text with videos) */}
       <div className="max-w-5xl mx-auto">
-        
+
         {/* HEADER / TEXT CONTENT */}
-        <div className="max-w-4xl mb-16">
+        <div className="max-w-4xl mb-20">
           <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8">
-            Union bank - Enabling Success
+            Union Bank – Enabling Success
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
@@ -37,7 +36,7 @@ const UnionContent = () => {
           </p>
 
           <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
-            Brand/Business objective
+            Brand / Business objective
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
@@ -48,16 +47,16 @@ const UnionContent = () => {
           </p>
         </div>
 
-        {/* VIDEOS GRID - 2 COLUMNS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* VIDEOS — STACKED */}
+        <div className="flex flex-col gap-16">
           {videos.map((video) => (
             <div
               key={video.id}
-              className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-black"
+              className="relative aspect-video rounded-lg overflow-hidden bg-black"
             >
               {playingVideo !== video.id && (
                 <div
-                  className="absolute inset-0 w-full h-full cursor-pointer"
+                  className="absolute inset-0 cursor-pointer"
                   onClick={() => setPlayingVideo(video.id)}
                 >
                   <Image
@@ -67,27 +66,24 @@ const UnionContent = () => {
                     className="object-cover"
                   />
 
-                  {/* Custom Play button */}
+                  {/* PLAY BUTTON */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
-                      <svg
-                        width="61"
-                        height="72"
-                        viewBox="0 0 81 92"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.50001 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </div>
+                    <svg
+                      width="61"
+                      height="72"
+                      viewBox="0 0 81 92"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.50001 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
                 </div>
               )}
 
-              {/* Video iframe */}
               {playingVideo === video.id && (
                 <iframe
                   src={video.src}
@@ -95,11 +91,12 @@ const UnionContent = () => {
                   className="w-full h-full"
                   allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                ></iframe>
+                />
               )}
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

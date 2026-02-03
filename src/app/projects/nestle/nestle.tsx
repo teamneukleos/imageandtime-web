@@ -9,21 +9,27 @@ const NestleContent = () => {
   const videos = [
     {
       id: 1,
-      src: "https://www.youtube.com/embed/Ui56E5gT-jE?si=3KgigtzSF3v6yU8-?autoplay=1",
+      src: "https://www.youtube.com/embed/Ui56E5gT-jE?autoplay=1",
       thumbnail: "/nestle/thumbnail1.png",
       title: "Nestlé Video 1",
     },
     {
       id: 2,
-      src: "https://www.youtube.com/embed/z9JW3scCpvY?si=PeP4Mqw4X_quIgR2?autoplay=1",
+      src: "https://www.youtube.com/embed/z9JW3scCpvY?autoplay=1",
       thumbnail: "/nestle/thumbnail2.png",
       title: "Nestlé Video 2",
     },
     {
       id: 3,
-      src: "https://www.youtube.com/embed/6pDZkSk8Bbk?si=Uj86OYofGk3p1Txj?autoplay=1",
+      src: "https://www.youtube.com/embed/6pDZkSk8Bbk?autoplay=1",
       thumbnail: "/nestle/thumbnail3.png",
       title: "Nestlé Video 3",
+    },
+    {
+      id: 4,
+      src: "https://drive.google.com/file/d/1yIC0KDdq0apvIseaM3wxk_2y5fMgtHz1/preview",
+      thumbnail: "/nestle/thumbnail5.png",
+      title: "Nestlé Video 4",
     },
   ];
 
@@ -52,95 +58,51 @@ const NestleContent = () => {
           </p>
         </div>
 
-        {/* VIDEOS */}
+        {/* VIDEOS – STACKED */}
         <div className="space-y-6">
-          
-          {/* FIRST VIDEO – FULL WIDTH */}
-          <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-black">
-            {playingVideo !== videos[0].id && (
-              <div
-                className="absolute inset-0 cursor-pointer"
-                onClick={() => setPlayingVideo(videos[0].id)}
-              >
-                <Image
-                  src={videos[0].thumbnail}
-                  alt={videos[0].title}
-                  fill
-                  className="object-cover"
-                />
+          {videos.map((video) => (
+            <div
+              key={video.id}
+              className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-black"
+            >
+              {playingVideo !== video.id && (
+                <div
+                  className="absolute inset-0 cursor-pointer"
+                  onClick={() => setPlayingVideo(video.id)}
+                >
+                  <Image
+                    src={video.thumbnail}
+                    alt={video.title}
+                    fill
+                    className="object-cover"
+                  />
 
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 flex items-center justify-center">
-                    <svg
-                      viewBox="0 0 81 92"
-                      width="61"
-                      height="72"
-                      fill="white"
-                    >
-                      <path d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.5 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {playingVideo === videos[0].id && (
-              <iframe
-                src={videos[0].src}
-                title={videos[0].title}
-                className="w-full h-full"
-                allow="autoplay; encrypted-media; picture-in-picture"
-                allowFullScreen
-              />
-            )}
-          </div>
-
-          {/* SECOND ROW – 2 VIDEOS */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {videos.slice(1).map((video) => (
-              <div
-                key={video.id}
-                className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-black"
-              >
-                {playingVideo !== video.id && (
-                  <div
-                    className="absolute inset-0 cursor-pointer"
-                    onClick={() => setPlayingVideo(video.id)}
-                  >
-                    <Image
-                      src={video.thumbnail}
-                      alt={video.title}
-                      fill
-                      className="object-cover"
-                    />
-
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 flex items-center justify-center">
-                        <svg
-                          viewBox="0 0 81 92"
-                          width="51"
-                          height="62"
-                          fill="white"
-                        >
-                          <path d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.5 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z" />
-                        </svg>
-                      </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 flex items-center justify-center">
+                      <svg
+                        viewBox="0 0 81 92"
+                        width="51"
+                        height="62"
+                        fill="white"
+                      >
+                        <path d="M78 41.3808C81.3333 43.3053 81.3333 48.1166 78 50.0411L7.5 90.7443C4.16667 92.6688 0 90.2631 0 86.4141V5.00775C0 1.15875 4.16667 -1.24689 7.5 0.677615L78 41.3808Z" />
+                      </svg>
                     </div>
                   </div>
-                )}
+                </div>
+              )}
 
-                {playingVideo === video.id && (
-                  <iframe
-                    src={video.src}
-                    title={video.title}
-                    className="w-full h-full"
-                    allow="autoplay; encrypted-media; picture-in-picture"
-                    allowFullScreen
-                  />
-                )}
-              </div>
-            ))}
-          </div>
+              {playingVideo === video.id && (
+                <iframe
+                  src={video.src}
+                  title={video.title}
+                  className="w-full h-full"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -67,18 +67,36 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      {/* SKETCHES */}
-      <div className="max-w-xl mx-auto mb-24 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="/bukka-hut/logo-concept-1.png" alt="Logo sketch exploration" className="w-full h-auto object-cover" />
-        <img src="/bukka-hut/logo-concept-2.png" alt="Logo sketch refinement" className="w-full h-auto object-cover" />
-        <img src="/bukka-hut/logo-concept-3.png" alt="Logo sketch refinement" className="w-full h-auto object-cover" />
-        <img src="/bukka-hut/logo-concept-4.png" alt="Logo sketch refinement" className="w-full h-auto object-cover" />
-      </div>
+     {/* SKETCHES */}
+{/* SKETCHES */}
+<div className="max-w-4xl mx-auto mb-24">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-start items-start">
+    <img
+      src="/bukka-hut/logo-concept-1.png"
+      alt="Logo sketch exploration"
+      className="w-full h-auto object-cover"
+    />
+    <img
+      src="/bukka-hut/logo-concept-2.png"
+      alt="Logo sketch refinement"
+      className="w-full h-auto object-cover"
+    />
+    <img
+      src="/bukka-hut/logo-concept-3.png"
+      alt="Logo sketch refinement"
+      className="w-full h-auto object-cover"
+    />
+    <img
+      src="/bukka-hut/logo-concept-4.png"
+      alt="Logo sketch refinement"
+      className="w-full h-auto object-cover"
+    />
+  </div>
+</div>
 
-      {/* LOGO JOURNEY */}
-      <div className="max-w-5xl mx-auto mb-28 flex justify-center">
-        <img src="/bukka-hut/logo-journey.png" alt="Logo design journey" className="w-full max-w-5xl h-auto object-cover" />
-      </div>
+
+
+      
 
       {/* LOGO COLOUR EXPLORATION */}
       <div className="max-w-5xl mx-auto mb-16">
@@ -120,53 +138,53 @@ export default function CreativeIdea() {
         </div> 
       </div> 
       {/* VISUAL PATTERNS GRID */}
+{/* VISUAL PATTERNS GRID */}
 <div className="max-w-5xl mx-auto mb-28">
 
   <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-stretch">
 
-    {/* Left Column (Smaller stacked images) */}
-    <div className="flex flex-col gap-6 h-[520px]">
+    {/* Left Column */}
+    <div className="flex flex-col gap-6 md:h-[520px]">
 
       <img
         src="/bukka-hut/visual-pattern-1.png"
         alt="Visual pattern 1"
-        className="w-full h-1/2 object-cover"
+        className="w-full h-1/2 md:h-1/2 object-cover"
       />
 
       <img
         src="/bukka-hut/visual-pattern-2.jpg"
         alt="Visual pattern 2"
-        className="w-full h-1/2 object-cover"
+        className="w-full h-1/2 md:h-1/2 object-cover"
       />
 
     </div>
 
-
-    {/* Right Row (4 images) */}
-    <div className="md:col-span-4 grid grid-cols-2 sm:grid-cols-4 gap-6 h-[520px]">
+    {/* Right Row */}
+    <div className="md:col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:h-[520px]">
 
       <img
         src="/bukka-hut/visual-pattern-3.png"
         alt="Visual pattern 3"
-        className="w-full h-full object-cover"
+        className="w-full h-auto md:h-full object-cover"
       />
 
       <img
         src="/bukka-hut/visual-pattern-4.png"
         alt="Visual pattern 4"
-        className="w-full h-full object-cover"
+        className="w-full h-auto md:h-full object-cover"
       />
 
       <img
         src="/bukka-hut/visual-pattern-5.png"
         alt="Visual pattern 5"
-        className="w-full h-full object-cover"
+        className="w-full h-auto md:h-full object-cover"
       />
 
       <img
         src="/bukka-hut/visual-pattern-6.png"
         alt="Visual pattern 6"
-        className="w-full h-full object-cover"
+        className="w-full h-auto md:h-full object-cover"
       />
 
     </div>
@@ -174,6 +192,7 @@ export default function CreativeIdea() {
   </div>
 
 </div>
+
 
 
 
@@ -210,35 +229,35 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      {/* BRAND IMAGES */}
-      <div className="max-w-3xl mx-auto mb-28 space-y-16">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <img src="/bukka-hut/uniform-1.jpg" alt="Uniform sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/uniform-2.jpg" alt="Uniform sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/uniform-3.png" alt="Uniform sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/uniform-4.png" alt="Uniform sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/uniform-5.png" alt="Uniform sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/uniform-6.jpg" alt="Uniform sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/uniform-7.png" alt="Uniform sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/uniform-8.png" alt="Uniform sample" className="w-full h-auto object-cover" />
 
 
+{/* BRAND IMAGES */}
+<div className="max-w-5xl mx-auto mb-28 space-y-16">
 
+  {/* Uniforms & Jackets & Caps */}
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <img src="/bukka-hut/uniform-1.jpg" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/uniform-2.jpg" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/uniform-3.png" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/uniform-4.png" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/uniform-5.png" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/uniform-6.jpg" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/uniform-7.png" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/uniform-8.png" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/jacket-1.jpg" alt="Uniform sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/cap-1.png" alt="Chef cap sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/cap-2.png" alt="Chef cap sample" className="w-full h-auto object-cover" />
+  </div>
 
-          <img src="/bukka-hut/jacket-1.jpg" alt="Uniform sample" className="w-full h-auto object-cover" />
+  {/* Cups, Dispatch, Bus, Storefront */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <img src="/bukka-hut/cup.png" alt="Cup sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/dispatch.png" alt="Dispatch sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/bus.png" alt="Bus branding sample" className="w-full h-auto object-cover" />
+    <img src="/bukka-hut/storefront.png" alt="Storefront sample" className="w-full h-auto object-cover" />
+  </div>
 
-              
-          <img src="/bukka-hut/cap-1.png" alt="Chef cap sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/cap-2.png" alt="Chef cap sample" className="w-full h-auto object-cover" />
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <img src="/bukka-hut/cup.png" alt="Cup sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/dispatch.png" alt="Dispatch sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/bus.png" alt="Bus branding sample" className="w-full h-auto object-cover" />
-          <img src="/bukka-hut/storefront.png" alt="Storefront sample" className="w-full h-auto object-cover" />
-        </div>
-      </div>
+</div>
     </section>
   );
 }

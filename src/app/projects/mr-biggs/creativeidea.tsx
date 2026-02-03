@@ -98,39 +98,25 @@ export default function MrBiggsCreativeIdea() {
         </div>
       </div>
 
-      {/* LOGO SKETCHES */}
-      <div className="max-w-xl mx-auto mb-24 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img src="/mr-biggs/logo-concept1.png" alt="Logo sketch" className="w-full h-auto object-cover" />
-        <img src="/mr-biggs/logo-concept2.png" alt="Logo sketch" className="w-full h-auto object-cover" />
-      </div>
+     
+{/* LOGO SKETCHES */}
+<div className="max-w-4xl mx-auto mb-24">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <img
+      src="/mr-biggs/logo-concept1.png"
+      alt="Logo sketch"
+      className="w-full h-auto object-cover"
+    />
+    <img
+      src="/mr-biggs/logo-concept2.png"
+      alt="Logo sketch"
+      className="w-full h-auto object-cover"
+    />
+  </div>
+</div>
 
-      {/* LOGO JOURNEY */}
-      <div className="max-w-5xl mx-auto mb-28 flex justify-center">
-        <img
-          src="/mr-biggs/logo-journey.png"
-          alt="Logo journey"
-          className="w-full max-w-5xl h-auto object-cover"
-        />
-      </div>
 
-      {/* COLOUR PALETTE */}
-      <div className="max-w-5xl mx-auto mb-16">
-        <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">
-            Brand Colours
-          </h2>
 
-          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Mr Bigg’s primary colours include Red, Yellow, Black, and White.
-            Supporting colours include Grey and Cream.
-          </p>
-
-          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            These colours are carefully selected to ensure visibility, warmth,
-            and consistency across all platforms.
-          </p>
-        </div>
-      </div>
 
       <div className="max-w-5xl mx-auto mb-28 flex justify-center">
         <img
@@ -231,27 +217,30 @@ export default function MrBiggsCreativeIdea() {
       </div>
 
       {/* BRAND IMAGES */}
-      <div className="max-w-3xl mx-auto mb-28 space-y-16">
+<div className="max-w-4xl mx-auto mb-28 space-y-16 px-6 md:px-0">
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <img src="/mr-biggs/uniform-1.png" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-2.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-3.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-4.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-5.png" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-6.png" alt="Uniform" className="w-full h-auto object-cover" />
-        </div>
+  {/* Uniforms */}
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <img src="/mr-biggs/uniform-1.png" alt="Uniform" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/uniform-2.jpg" alt="Uniform" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/uniform-3.jpg" alt="Uniform" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/uniform-4.jpg" alt="Uniform" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/uniform-5.png" alt="Uniform" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/uniform-6.png" alt="Uniform" className="w-full h-auto object-cover" />
+  </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <img src="/mr-biggs/packaging-1.png" alt="Packaging" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/packaging-2.png" alt="Storefront" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/packaging-3.jpg" alt="Packaging" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/packaging-4.png" alt="Storefront" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/office-1.jpg" alt="Packaging" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/office-2.jpg" alt="Storefront" className="w-full h-auto object-cover" />
-        </div>
+  {/* Packaging & Office */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <img src="/mr-biggs/packaging-1.png" alt="Packaging" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/packaging-2.png" alt="Storefront" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/packaging-3.jpg" alt="Packaging" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/packaging-4.png" alt="Storefront" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/office-1.jpg" alt="Packaging" className="w-full h-auto object-cover" />
+    <img src="/mr-biggs/office-2.jpg" alt="Storefront" className="w-full h-auto object-cover" />
+  </div>
 
-      </div>
+</div>
+
 
     </section>
   );

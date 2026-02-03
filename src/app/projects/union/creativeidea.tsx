@@ -59,29 +59,25 @@ export default function CreativeIdea() {
       </div>
 
       {/* SKETCHES */}
-      <div className="max-w-xl mx-auto mb-24 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img
-          src="/m36/sketch1.png"
-          alt="Logo sketch exploration"
-          className="w-full h-auto object-cover"
-        />
-        <img
-          src="/m36/sketch2.png"
-          alt="Logo sketch refinement"
-          className="w-full h-auto object-cover"
-        />
-        <img
-          src="/m36/sketch3.png"
-          alt="Logo sketch refinement"
-          className="w-full h-auto object-cover"
-        />
-        <img
-          src="/m36/sketch4.png"
-          alt="Logo sketch refinement"
-          className="w-full h-auto object-cover"
-        />
-      </div>
-
+<div className="max-w-5xl mx-auto mb-24">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <img
+      src="/m36/sketch1.png"
+      alt="Logo sketch exploration"
+      className="w-full h-auto object-cover"
+    />
+    <img
+      src="/m36/sketch3.png"
+      alt="Logo sketch refinement"
+      className="w-full h-auto object-cover"
+    />
+    <img
+      src="/m36/sketch4.png"
+      alt="Logo sketch refinement"
+      className="w-full h-auto object-cover"
+    />
+  </div>
+</div>
       {/* LOGO JOURNEY */}
       <div className="max-w-5xl mx-auto mb-28 grid grid-cols-1 md:grid-cols-2 gap-6">
         <img
@@ -117,16 +113,16 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto mb-28 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img
-          src="/m36/logo-color1.png"
-          alt="Logo design journey"
-          className="w-full max-w-5xl h-auto object-cover"
-        />
+      <div className="max-w-3xl mx-auto mb-28 grid grid-cols-1 md:grid-cols-2 gap-6">
         <img
           src="/m36/logo-color2.png"
           alt="Logo design journey"
-          className="w-full max-w-5xl h-auto object-cover"
+          className="w-full max-w-6xl h-auto object-cover"
+        />
+        <img
+          src="/m36/logo-color1.png"
+          alt="Logo design journey"
+          className="w-full max-w-6xl h-auto object-cover"
         />
       </div>
 
@@ -149,29 +145,30 @@ export default function CreativeIdea() {
         />
       </div>
 
-      {/* FINAL LOGO */}
-      <div className="max-w-5xl mx-auto mb-12">
-        <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">Final Logo</h2>
-          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi.
-            Nulla quis sem at nibh elementum imperdiet.
-          </p>
-        </div>
-      </div>
+{/* FINAL LOGO */}
+<div className="max-w-5xl mx-auto mb-12">
+  <div className="max-w-4xl space-y-6">
+    <h2 className="text-xl font-semibold text-white">Final Logo</h2>
+    <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi.
+      Nulla quis sem at nibh elementum imperdiet.
+    </p>
+  </div>
+</div>
 
-      <div className="max-w-6xl mx-auto mb-28 flex flex-col sm:flex-row justify-center items-center gap-8">
-        <img
-          src="/m36/m36-final-logo.png"
-          alt="Final logo"
-          className="w-full max-w-md h-auto object-contain"
-        />
-        <img
-          src="/m36/m36-logo.gif"
-          alt="Logo animation"
-          className="w-full max-w-md h-auto object-contain"
-        />
-      </div>
+<div className="max-w-4xl mx-auto mb-28 grid grid-cols-1 sm:grid-cols-2 gap-8">
+  <img
+    src="/m36/m36-final-logo.png"
+    alt="Final logo"
+    className="w-full h-auto object-contain"
+  />
+  <img
+    src="/m36/m36-logo.gif"
+    alt="Logo animation"
+    className="w-full h-auto object-contain"
+  />
+</div>
+
 
       {/* BRAND EXTENSIONS */}
       <div className="max-w-5xl mx-auto mb-16">
