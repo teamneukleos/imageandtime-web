@@ -4,7 +4,7 @@ import React from "react";
 
 export default function CreativeIdea() {
   return (
-    <section className="w-full bg-[#0D0D0D] py-28 px-6 md:px-12">
+    <section className="w-full bg-[#111111] py-28 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
 
         {/* SECTION TEXT */}
@@ -50,6 +50,10 @@ export default function CreativeIdea() {
               <span className="font-semibold text-white">
                 This Is Not a Full Stop.
               </span>{" "}
+            
+            </p>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
               We chose poetry over platitudes.
             </p>
             <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
@@ -69,23 +73,6 @@ export default function CreativeIdea() {
         </div>
 
         
-        {/* METRICS */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 text-center gap-12">
-          <div>
-            <p className="text-white text-base mb-2">Impressions</p>
-            <p className="text-[#CC111A] text-3xl font-semibold">—</p>
-          </div>
-
-          <div>
-            <p className="text-white text-base mb-2">Engagement</p>
-            <p className="text-[#CC111A] text-3xl font-semibold">—</p>
-          </div>
-
-          <div>
-            <p className="text-white text-base mb-2">Views / Plays</p>
-            <p className="text-[#CC111A] text-3xl font-semibold">—</p>
-          </div>
-        </div>
 
       </div>
     </section>

@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const eTranzactContent = () => {
   return (
-    <section className="w-full bg-[#0D0D0D] py-32 px-6 md:px-12">
-      {/* SHARED CONTAINER (aligns text with image) */}
+    <section className="w-full bg-[#111111] py-32 px-6 md:px-12">
+      {/* SHARED CONTAINER */}
       <div className="max-w-5xl mx-auto">
         
         {/* HEADER / TEXT CONTENT */}

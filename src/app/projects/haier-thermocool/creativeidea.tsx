@@ -4,7 +4,7 @@ import React from "react";
 
 export default function CreativeIdea() {
   return (
-    <section className="w-full bg-[#0D0D0D] py-14 md:py-28 px-6 md:px-12">
+    <section className="w-full bg-[#111111] py-14 md:py-28 px-6 md:px-12">
       
       {/* SECTION TEXT */}
       <div className="max-w-5xl mx-auto mb-20 mt-[-50px]">
@@ -39,7 +39,7 @@ export default function CreativeIdea() {
             </h3>
 
             <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-              Nigerian families do not just want appliances that work — they want
+              Nigerian families do not just want appliances that work. They want
               peace of mind.
             </p>
 
@@ -61,27 +61,32 @@ export default function CreativeIdea() {
               Let Home Feel Like Home
             </p>
 
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed font-medium">
+              We stopped selling appliances and started selling relief.
+            </p>
+
             <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-              We stopped selling appliances and started selling relief. Through
-              storytelling, we showed how Haier Thermocool inverter appliances run
+              Through storytelling, we showed how Haier Thermocool inverter appliances run
               seamlessly on generators and inverters while cutting energy bills by
               up to 50%. Even during blackouts, life at home could continue
               uninterrupted.
             </p>
 
             <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-              The campaign rolled out like a cinematic release — teasing audiences
+              The campaign rolled out like a cinematic release. We teased audiences
               with a lead character, building anticipation through influencers, and
               funnelling interest via programmatic ads to social platforms. We
               extended the story into Big Brother Naija, embedding it into everyday
               Nigerian life through trusted voices like Stan Nze.
             </p>
 
-            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed font-medium">
               From TV placements to vox pops and social conversations, every
-              touchpoint educated, built trust, and converted curiosity into action.
-              The result was a shift in perception — from appliances to peace of
-              mind, and from power problems to comfort that lasts.
+              touchpoint educated, built trust, and converted curiosity into action.            </p>
+
+            <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+              The result was a shift in perception. From appliances to peace of
+              mind. From power problems to comfort that lasts.
             </p>
           </div>
 

@@ -32,7 +32,7 @@ const ServiceHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-base md:text-lg lg:text-xl font-normal max-w-2xl leading-relaxed"
+          className="text-2xl md:text-2xl lg:text-2xl font-semibold max-w-2xl leading-relaxed"
         >
           We help ambitious brands craft remarkable <br />
           identities create effective advertising and <br />

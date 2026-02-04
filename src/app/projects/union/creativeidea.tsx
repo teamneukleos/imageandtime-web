@@ -4,7 +4,7 @@ import React from "react";
 
 export default function CreativeIdea() {
   return (
-    <section className="w-full bg-[#0D0D0D] py-14 md:py-28 px-6 md:px-12">
+    <section className="w-full bg-[#111111] py-14 md:py-28 px-6 md:px-12">
       {/* ABOUT */}
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
@@ -38,9 +38,11 @@ export default function CreativeIdea() {
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Creative Idea</h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
+            M36 was positioned as a trusted digital concierge designed for a
+            new class of affluent individuals who value discretion, access,
+            and intelligent wealth management. The idea focused on simplicity,
+            exclusivity, and confidence, presenting M36 as a seamless gateway
+            to premium financial services tailored to individual lifestyles.
           </p>
         </div>
       </div>
@@ -52,8 +54,10 @@ export default function CreativeIdea() {
             Logo Concept 
           </h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam.
+            The M36 logo was designed to reflect precision, structure, and
+            balance. The form draws inspiration from growth, stability, and
+            continuity, reinforcing the idea of long term wealth preservation
+            and intelligent financial planning.
           </p>
         </div>
       </div>
@@ -107,8 +111,9 @@ export default function CreativeIdea() {
             Logo colour exploration
           </h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam.
+            The colour palette was carefully selected to communicate wealth,
+            trust, and exclusivity. Deep, refined tones were used to signal
+            premium value while maintaining a modern and digital forward feel.
           </p>
         </div>
       </div>
@@ -131,8 +136,10 @@ export default function CreativeIdea() {
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Logo pattern</h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam.
+            The logo pattern extends the identity by creating a flexible visual
+            system that can be applied across digital and physical touchpoints.
+            It reinforces brand recognition while adding visual depth and
+            consistency.
           </p>
         </div>
       </div>
@@ -150,8 +157,9 @@ export default function CreativeIdea() {
   <div className="max-w-4xl space-y-6">
     <h2 className="text-xl font-semibold text-white">Final Logo</h2>
     <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi.
-      Nulla quis sem at nibh elementum imperdiet.
+      The final M36 logo represents clarity, confidence, and refined
+      sophistication. It is designed to perform seamlessly across digital
+      interfaces, print applications, and motion assets.
     </p>
   </div>
 </div>
@@ -175,8 +183,10 @@ export default function CreativeIdea() {
         <div className="max-w-4xl space-y-6">
           <h2 className="text-xl font-semibold text-white">Brand Extensions</h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sodales ligula in libero. Sed dignissim lacinia nunc.
+            The M36 identity was extended across cards, promotional materials,
+            and lifestyle assets to create a cohesive and premium brand
+            experience. Each application reinforces exclusivity, quality, and
+            attention to detail.
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function CreativeIdea() {
   return (
-    <section className="w-full bg-[#0D0D0D] py-28 px-6 md:px-12">
+    <section className="w-full bg-[#111111] py-28 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
 
         {/* SECTION TEXT */}

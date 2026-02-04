@@ -22,7 +22,7 @@ const Footer = () => {
               <li><Link href="/about" className="hover:text-gray-400 transition">About Us</Link></li>
               <li><Link href="/culture" className="hover:text-gray-400 transition">People & Culture</Link></li>
               <li><Link href="/services" className="hover:text-gray-400 transition">Our Services</Link></li>
-              <li><Link href="/team" className="hover:text-gray-400 transition">The Team</Link></li>
+              <li><Link href="/about#our-team" className="hover:text-gray-400 transition">The Team</Link></li>
             </ul>
           </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/imageandtime/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-gray-400 transition"
@@ -42,7 +42,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/company/image-&-time/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-gray-400 transition"

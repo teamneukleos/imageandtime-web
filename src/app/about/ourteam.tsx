@@ -25,7 +25,7 @@ const Team = () => {
   ];
 
   return (
-    <section className="w-full bg-[#111111] py-28 px-6">
+    <section id="our-team" className="w-full bg-[#111111] py-28 px-6">
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <h2 className="text-3xl font-semibold text-white mb-20">

@@ -11,19 +11,17 @@ export default function Intro() {
         {/* LEFT TEXT SECTION */}
         <div className="max-w-xl space-y-6">
           <h2 className="text-white text-2xl md:text-4xl md:mb-16 font-semibold leading-tight">
-            We are Image{""}
+            We are{" "}
             <Image
-              src="/logo/and-logo.svg"
-              alt="Ampersand Logo"
-              width={35}
-              height={35}
-              className="inline-block align-middle mx-2 w-6 md:w-10"
+              src="/logo/logo.svg"
+              alt="Image & Time full logo"
+              width={290}
+              height={80}
+              className="inline-block align-middle mx-2 w-40 md:w-56 lg:w-64"
               priority
             />
-            Time, a world leading Advertising and creative agency.
+            , a world leading Advertising and creative agency.
           </h2>
-
-          
 
           {/* READ MORE BUTTON */}
           <Link

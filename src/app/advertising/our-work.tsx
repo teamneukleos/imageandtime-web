@@ -66,7 +66,7 @@ const works = [
     brand: "Lacasera",
     title: "This is not a full stop",
     headline: "This is not a full stop",
-    emotive: "",
+    emotive: "Hope is still possible. Progress is still in motion",
     image: "/work/lacasera.png",
     link: "/projects/lacasera"
   },

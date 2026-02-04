@@ -4,7 +4,7 @@ import React from "react";
 
 export default function CreativeIdea() {
   return (
-    <section className="w-full bg-[#0D0D0D] py-14 md:py-28 px-6 md:px-12">
+    <section className="w-full bg-[#111111] py-14 md:py-28 px-6 md:px-12">
       {/* ABOUT AWARRI */}
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
@@ -52,7 +52,7 @@ export default function CreativeIdea() {
           </h2>
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             "Awarri" translates to <span className="italic">seek and find</span>{" "}
-            in Yoruba — a concept that aligns with discovery, learning, and
+            in Yoruba, a concept that aligns with discovery, learning, and
             exploration. The logo was designed to embody curiosity, progress,
             and knowledge.
           </p>
@@ -94,22 +94,20 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto mb-24 flex justify-center">
-        <img
-          src="/awarri/awarri-logo-final.png"
-          alt="Final Awarri logo"
-          className="w-full max-w-md h-auto object-contain"
-        />
-      </div>
+      <div className="max-w-5xl mx-auto mb-28 grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+  <img
+    src="/awarri/awarri-logo-final.png"
+    alt="Final Awarri logo"
+    className="w-full max-w-md h-auto object-contain"
+  />
 
-      {/* LOGO ANIMATION */}
-      <div className="max-w-6xl mx-auto mb-28 flex justify-center">
-        <img
-          src="/awarri/awarri.gif"
-          alt="Awarri logo animation"
-          className="w-full max-w-md h-auto object-contain"
-        />
-      </div>
+  <img
+    src="/awarri/awarri.gif"
+    alt="Awarri logo animation"
+    className="w-full max-w-md h-auto object-contain"
+  />
+</div>
+
 
       {/* BRAND EXTENSIONS */}
       <div className="max-w-5xl mx-auto mb-16">

@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 
-export default function MrBiggsCreativeIdea() {
+export default function CreativeIdea() {
   return (
-    <section className="w-full bg-[#0D0D0D] pt-[-16px] pb-12 px-6 md:px-12">
-
+    <section className="w-full bg-[#111111] pt-[-16px] pb-12 px-6 md:px-12">
       {/* ABOUT */}
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">About Mr Bigg’s</h2>
+          <h2 className="text-xl font-semibold text-white">
+            About Mr Bigg’s
+          </h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Mr Bigg’s is one of Nigeria’s first and most iconic quick service
@@ -28,7 +29,9 @@ export default function MrBiggsCreativeIdea() {
       {/* BRAND VOICE */}
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">Brand Voice</h2>
+          <h2 className="text-xl font-semibold text-white">
+            Brand Voice
+          </h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Mr Bigg’s communicates in a professional, friendly, and wholesome
@@ -46,7 +49,9 @@ export default function MrBiggsCreativeIdea() {
       {/* DESIGN TONE */}
       <div className="max-w-5xl mx-auto mb-20">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">Design Tone</h2>
+          <h2 className="text-xl font-semibold text-white">
+            Design Tone
+          </h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The Mr Bigg’s design tone is clean, bold, and honest. It reflects a
@@ -83,7 +88,9 @@ export default function MrBiggsCreativeIdea() {
       {/* LOGO CONCEPT */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">Logo Concept</h2>
+          <h2 className="text-xl font-semibold text-white">
+            Logo Concept
+          </h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The Mr Bigg’s logo features the iconic “Bigg B” symbol combined with
@@ -98,25 +105,21 @@ export default function MrBiggsCreativeIdea() {
         </div>
       </div>
 
-     
-{/* LOGO SKETCHES */}
-<div className="max-w-4xl mx-auto mb-24">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <img
-      src="/mr-biggs/logo-concept1.png"
-      alt="Logo sketch"
-      className="w-full h-auto object-cover"
-    />
-    <img
-      src="/mr-biggs/logo-concept2.png"
-      alt="Logo sketch"
-      className="w-full h-auto object-cover"
-    />
-  </div>
-</div>
-
-
-
+      {/* LOGO SKETCHES */}
+      <div className="max-w-4xl mx-auto mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <img
+            src="/mr-biggs/logo-concept1.png"
+            alt="Logo sketch"
+            className="w-full h-auto object-cover"
+          />
+          <img
+            src="/mr-biggs/logo-concept2.png"
+            alt="Logo sketch"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
 
       <div className="max-w-5xl mx-auto mb-28 flex justify-center">
         <img
@@ -129,7 +132,9 @@ export default function MrBiggsCreativeIdea() {
       {/* TYPOGRAPHY */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">Typography</h2>
+          <h2 className="text-xl font-semibold text-white">
+            Typography
+          </h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             Cubano is used for headings while Neue Haas Display is used for body
@@ -156,35 +161,32 @@ export default function MrBiggsCreativeIdea() {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto mb-28 flex justify-center">
-  <div className="flex flex-col gap-6 w-full max-w-4xl">
+      <div className="max-w-5xl mx-auto mb-28 flex">
+        <div className="flex flex-col gap-6 w-full max-w-4xl">
+          <div className="w-full h-full flex items-center bg-transparent">
+            <img
+              src="/mr-biggs/visual-pattern-1 copy.png"
+              alt="Visual pattern primary"
+              className="w-full h-full object-contain"
+            />
+          </div>
 
-    {/* TOP – BIGGER */}
-    <div className="w-full h-full flex items-center justify-center bg-transparent">
-      <img
-        src="/mr-biggs/visual-pattern-1 copy.png"
-        alt="Visual pattern primary"
-        className="w-full h-full object-contain"
-      />
-    </div>
-
-    {/* BOTTOM – SMALLER  */}
-    <div className="w-full h-full flex items-center justify-center bg-transparent">
-      <img
-        src="/mr-biggs/visual-pattern-2.png"
-        alt="Visual pattern secondary"
-        className="w-full h-full object-contain"
-      />
-    </div>
-
-  </div>
-</div>
-
+          <div className="w-full h-full flex items-center bg-transparent">
+            <img
+              src="/mr-biggs/visual-pattern-2.png"
+              alt="Visual pattern secondary"
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+      </div>
 
       {/* FINAL LOGO */}
       <div className="max-w-5xl mx-auto mb-12">
         <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">Final Logo</h2>
+          <h2 className="text-xl font-semibold text-white">
+            Final Logo
+          </h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
             The final logo reflects Mr Bigg’s heritage, confidence, and modern
@@ -195,7 +197,11 @@ export default function MrBiggsCreativeIdea() {
       </div>
 
       <div className="max-w-6xl mx-auto mb-28 flex flex-col sm:flex-row justify-center items-center gap-8">
-        <img src="/mr-biggs/image.png" alt="Final logo" className="w-full max-w-md h-auto object-contain" />
+        <img
+          src="/mr-biggs/image.png"
+          alt="Final logo"
+          className="w-full max-w-md h-auto object-contain"
+        />
       </div>
 
       {/* BRAND APPLICATIONS */}
@@ -217,31 +223,25 @@ export default function MrBiggsCreativeIdea() {
       </div>
 
       {/* BRAND IMAGES */}
-<div className="max-w-4xl mx-auto mb-28 space-y-16 px-6 md:px-0">
+      <div className="max-w-5xl mx-auto mb-28 space-y-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <img src="/mr-biggs/uniform-1.png" alt="Uniform" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/uniform-2.jpg" alt="Uniform" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/uniform-3.jpg" alt="Uniform" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/uniform-4.jpg" alt="Uniform" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/uniform-5.png" alt="Uniform" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/uniform-6.png" alt="Uniform" className="w-full h-auto object-cover" />
+        </div>
 
-  {/* Uniforms */}
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-    <img src="/mr-biggs/uniform-1.png" alt="Uniform" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/uniform-2.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/uniform-3.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/uniform-4.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/uniform-5.png" alt="Uniform" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/uniform-6.png" alt="Uniform" className="w-full h-auto object-cover" />
-  </div>
-
-  {/* Packaging & Office */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    <img src="/mr-biggs/packaging-1.png" alt="Packaging" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/packaging-2.png" alt="Storefront" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/packaging-3.jpg" alt="Packaging" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/packaging-4.png" alt="Storefront" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/office-1.jpg" alt="Packaging" className="w-full h-auto object-cover" />
-    <img src="/mr-biggs/office-2.jpg" alt="Storefront" className="w-full h-auto object-cover" />
-  </div>
-
-</div>
-
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <img src="/mr-biggs/packaging-1.png" alt="Packaging" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/packaging-2.png" alt="Storefront" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/packaging-3.jpg" alt="Packaging" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/packaging-4.png" alt="Storefront" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/office-1.jpg" alt="Office" className="w-full h-auto object-cover" />
+          <img src="/mr-biggs/office-2.jpg" alt="Office" className="w-full h-auto object-cover" />
+        </div>
+      </div>
     </section>
   );
 }

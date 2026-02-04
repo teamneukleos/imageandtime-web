@@ -10,14 +10,14 @@ const slides = [
     image: "/images/hero-bg.jpg",
     subtitleDesktop: (
       <>
-        We make brands people<br />trust and love.
+        We create ads that<br />don't feel like ads.
       </>
     ),
     subtitleMobile: (
       <>
-        We make brands
-        people trust
-        and love.
+        We create ads
+        that don't feel
+        like ads.
       </>
     ),
   },
@@ -41,14 +41,13 @@ const slides = [
     image: "/images/herobg3.png",
     subtitleDesktop: (
       <>
-        We create ads that<br />don’t feel like ads.
+        We make brands people<br />trust and love.
       </>
     ),
     subtitleMobile: (
       <>
-        We create ads
-        that don’t feel
-        like ads.
+        We make brands people
+        trust and love.
       </>
     ),
   },
