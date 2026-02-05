@@ -16,7 +16,7 @@ const MrBiggsContent = () => {
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-            Lorem ipsum
+            Where memories meet meals.
           </p>
 
           <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
@@ -24,9 +24,19 @@ const MrBiggsContent = () => {
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Build a bold, cheerful brand identity and visual system that repositions Mr Bigg’s as Nigeria’s iconic quick service restaurant, blending its proud heritage with modern relevance to inspire trust, nostalgia, and everyday enjoyment for families and communities.
           </p>
         </div>
+
+        {/* IMAGE SECTION */}
+                <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src="/mr-biggs/mr-biggs-bg.jpg"
+                    alt="Mr biggs Image"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
 
         
       </div>

@@ -16,7 +16,7 @@ const BukkaHutContent = () => {
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-            Lorem ipsum
+            A Taste of Home.
           </p>
 
           <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
@@ -24,7 +24,7 @@ const BukkaHutContent = () => {
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Build a warm, trustworthy brand identity and visual system that positions Bukka Hut as Nigeria’s leading comfort food destination, evoking homeliness and care while fostering satisfaction, belonging, and loyalty across generations.
           </p>
         </div>
 

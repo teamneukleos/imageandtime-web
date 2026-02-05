@@ -16,7 +16,7 @@ const OneAlphaContent = () => {
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-            Lorem Ipsum
+            Arrive in style.
           </p>
 
           <h1 className="text-2xl md:text-4xl font-semibold text-white mb-8 mt-12">
@@ -24,10 +24,19 @@ const OneAlphaContent = () => {
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            To position OneAlpha as the leader in premium road transportation by delivering safe, stylish, and comfortable journeys that inspire confidence and loyalty through luxury service and innovation.
           </p>
         </div>
 
+        {/* IMAGE SECTION */}
+        <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+          <Image
+            src="/one-alpha/onealpha.png"
+            alt="One Alpha Image"
+            fill
+            className="object-cover"
+          />
+        </div>
         
       </div>
     </section>

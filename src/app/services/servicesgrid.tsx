@@ -10,18 +10,18 @@ const servicesData = [
     label: "Advertising & Marketing",
     title: "Campaigns that captivate and convert",
     description: [
-      "Great advertising doesn't just get noticed—it sparks emotion, builds connection, and drives action. We create campaigns that cut through the noise, speak directly to your audience, and turn attention into measurable results. From brand awareness to conversion-focused campaigns, we blend creativity with data-driven insights to ensure every message lands with impact and purpose.",
-    "Our approach starts with understanding your audience's desires, behaviors, and pain points. We then craft compelling narratives across the right channels—whether digital, traditional, or experiential—ensuring your brand stays top of mind. Through continuous optimization and performance tracking, we help you maximize ROI while building lasting brand equity that fuels long-term growth."
+      "Great advertising doesn't just get noticed. It sparks emotion, builds connection, and drives action. We create campaigns that cut through the noise, speak directly to your audience, and turn attention into measurable results. From brand awareness to conversion-focused campaigns, we blend creativity with data-driven insights to ensure every message lands with impact and purpose.",
+      "Our approach starts with understanding your audience's desires, behaviors, and pain points. We then craft compelling narratives across the right channels, whether digital, traditional, or experiential, ensuring your brand stays top of mind. Through continuous optimization and performance tracking, we help you maximize ROI while building lasting brand equity that fuels long-term growth."
     ],
     services: [
-     "Campaign Strategy & Planning",
-    "Creative Development & Production",
-    "Media Planning & Buying",
-    "Digital Marketing & Social Media",
-    "Content Marketing & Storytelling",
-    "Performance Marketing & Analytics"
+      "Campaign Strategy & Planning",
+      "Creative Development & Production",
+      "Media Planning & Buying",
+      "Digital Marketing & Social Media",
+      "Content Marketing & Storytelling",
+      "Performance Marketing & Analytics"
     ],
-    image: "/services/image.png",
+    image: "/services/img1.png",
     imagePosition: "left"
   },
   {
@@ -29,7 +29,7 @@ const servicesData = [
     label: "Brand identity & Product design",
     title: "Building brands that resonate and endure",
     description: [
-      "A strong brand is more than a logo—it's the emotional connection between your business and your audience. We help you craft identities that stand out, tell compelling stories, and build lasting relationships with your customers.",
+      "A strong brand is more than a logo. It is the emotional connection between your business and your audience. We help you craft identities that stand out, tell compelling stories, and build lasting relationships with your customers.",
       "Through strategic positioning, visual identity design, and brand messaging, we ensure your brand speaks authentically to your target market while differentiating you from competitors."
     ],
     services: [
@@ -38,7 +38,7 @@ const servicesData = [
       "Brand Messaging & Voice",
       "Brand Guidelines Development"
     ],
-    image: "/services/image.png",
+    image: "/services/img2.png",
     imagePosition: "right"
   },
   {
@@ -46,7 +46,7 @@ const servicesData = [
     label: "EXPERIENCE DESIGN",
     title: "Creating experiences that engage and inspire",
     description: [
-      "Great experiences drive loyalty and growth. We design meaningful interactions across every touchpoint—from digital products to physical spaces—ensuring your audience feels valued and connected.",
+      "Great experiences drive loyalty and growth. We design meaningful interactions across every touchpoint, from digital products to physical spaces, ensuring your audience feels valued and connected.",
       "Our human-centered approach combines research, creativity, and strategy to build experiences that are intuitive, memorable, and aligned with your business goals."
     ],
     services: [
@@ -55,7 +55,7 @@ const servicesData = [
       "Service Design",
       "Digital Product Design"
     ],
-    image: "/services/image.png",
+    image: "/services/img4.png",
     imagePosition: "left"
   }
 ];
@@ -94,26 +94,22 @@ const ServicesGrid = () => {
             }`}
           >
             <div className="max-w-2xl mx-auto space-y-8">
-              {/* Label */}
               <div className="inline-block">
                 <span className="text-xs lg:text-sm tracking-widest text-gray-400 uppercase">
                   {service.label}
                 </span>
               </div>
 
-              {/* Title */}
               <h3 className="text-2xl lg:text-3xl xl:text-4xl leading-tight">
                 {service.title}
               </h3>
 
-              {/* Description Paragraphs */}
               <div className="space-y-6 text-gray-300 text-sm lg:text-base leading-relaxed">
                 {service.description.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
               </div>
 
-              {/* Services List */}
               <div className="pt-8">
                 <h4 className="text-sm tracking-widest text-gray-400 uppercase mb-6">
                   {service.label} SERVICES
@@ -140,7 +136,6 @@ const ServicesGrid = () => {
                 </div>
               </div>
 
-              {/* CTA Button */}
               <div className="pt-8">
                 <Link
                   href="/contact"

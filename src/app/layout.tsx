@@ -19,8 +19,10 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: 'imageandtime',
-  description: 'Portfolio website of Oluwatosin, a passionate frontend developer.',
-};
+  description: 'Image and Time, a creative agency based in Lagos, Nigeria.',
+  icons: {
+    icon: '/favicon.ico',
+}};
 
 export default function RootLayout({
   children,

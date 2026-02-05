@@ -47,25 +47,25 @@ const works = [
   },
   {
     brand: "One Alpha",
-    title: "",
-    headline: "",
-    emotive: "",
+    title: "Premium Road Transport Brand",
+    headline: "Arrive in Style",
+    emotive: "I feel confident choosing this",
     image: "/one-alpha/one-alpha-bg.png",
     link: "/projects/one-alpha"
   },
   {
     brand: "Bukka Hut",
-    title: "",
-    headline: "",
-    emotive: "",
+    title: "Nigeria’s Comfort Food Brand",
+    headline: "A Taste of Home",
+    emotive: "This feels warm and familiar",
     image: "/bukka-hut/bukka-hut-bg.png",
     link: "/projects/bukka-hut"
   },
   {
     brand: "Mr Biggs",
-    title: "",
-    headline: "",
-    emotive: "",
+    title: "Nigeria’s Iconic Fast Food Brand",
+    headline: "Where memories meet meals",
+    emotive: "This feels nostalgic and satisfying",
     image: "/mr-biggs/office-1.jpg",
     link: "/projects/mr-biggs"
   },

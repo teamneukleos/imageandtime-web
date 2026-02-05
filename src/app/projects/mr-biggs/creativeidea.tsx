@@ -105,30 +105,49 @@ export default function CreativeIdea() {
         </div>
       </div>
 
-      {/* LOGO SKETCHES */}
-      <div className="max-w-4xl mx-auto mb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img
-            src="/mr-biggs/logo-concept1.png"
-            alt="Logo sketch"
-            className="w-full h-auto object-cover"
-          />
-          <img
-            src="/mr-biggs/logo-concept2.png"
-            alt="Logo sketch"
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      </div>
+      {/* LOGO CONCEPT */}
+<div className="max-w-5xl mx-auto mb-16">
+  <div className="max-w-4xl space-y-6">
+    <h2 className="text-xl font-semibold text-white">
+      Logo Concept
+    </h2>
 
-      <div className="max-w-5xl mx-auto mb-28 flex justify-center">
+    <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+      The Mr Bigg’s logo features the iconic “Bigg B” symbol combined with
+      the Cubano wordmark. It represents joy, quality, and long-standing
+      brand recognition.
+    </p>
+
+    <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+      The logo must always be used in accordance with spacing, size, and
+      colour guidelines to ensure consistency.
+    </p>
+  </div>
+</div>
+
+{/* LOGO SKETCHES */}
+<div className="max-w-5xl mx-auto mb-24">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+    {[
+      "/mr-biggs/logo-concept1.png",
+      "/mr-biggs/logo-concept2.png",
+    ].map((src, index) => (
+      <div
+        key={index}
+        className="w-full aspect-[3/2] bg-white flex items-center justify-center"
+      >
         <img
-          src="/mr-biggs/colors.png"
-          alt="Colour palette"
-          className="w-full h-auto object-cover"
+          src={src}
+          alt="Logo sketch"
+          className="max-w-full max-h-full object-contain"
         />
       </div>
+    ))}
+  </div>
+</div>
 
+
+      
       {/* TYPOGRAPHY */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="max-w-4xl space-y-6">
@@ -205,43 +224,72 @@ export default function CreativeIdea() {
       </div>
 
       {/* BRAND APPLICATIONS */}
-      <div className="max-w-5xl mx-auto mb-16">
-        <div className="max-w-4xl space-y-6">
-          <h2 className="text-xl font-semibold text-white">
-            Brand Applications
-          </h2>
+<div className="max-w-5xl mx-auto mb-16">
+  <div className="max-w-4xl space-y-6">
+    <h2 className="text-xl font-semibold text-white">
+      Brand Applications
+    </h2>
 
-          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Mr Bigg’s identity extends across packaging, uniforms, signage,
-            vehicles, menus, and digital platforms.
-          </p>
+    <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+      Mr Bigg’s identity extends across packaging, uniforms, signage,
+      vehicles, menus, and digital platforms.
+    </p>
 
-          <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Each application reinforces brand consistency and customer trust.
-          </p>
-        </div>
+    <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
+      Each application reinforces brand consistency and customer trust.
+    </p>
+  </div>
+</div>
+
+{/* BRAND IMAGES */}
+<div className="max-w-5xl mx-auto mb-28 space-y-16">
+  {/* UNIFORMS */}
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    {[
+      "/mr-biggs/uniform-1.png",
+      "/mr-biggs/uniform-2.jpg",
+      "/mr-biggs/uniform-3.jpg",
+      "/mr-biggs/uniform-4.jpg",
+      "/mr-biggs/uniform-5.png",
+      "/mr-biggs/uniform-6.png",
+    ].map((src, index) => (
+      <div
+        key={index}
+        className="relative w-full aspect-[4/3] overflow-hidden"
+      >
+        <img
+          src={src}
+          alt="Uniform"
+          className="w-full h-full object-cover"
+        />
       </div>
+    ))}
+  </div>
 
-      {/* BRAND IMAGES */}
-      <div className="max-w-5xl mx-auto mb-28 space-y-16">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <img src="/mr-biggs/uniform-1.png" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-2.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-3.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-4.jpg" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-5.png" alt="Uniform" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/uniform-6.png" alt="Uniform" className="w-full h-auto object-cover" />
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <img src="/mr-biggs/packaging-1.png" alt="Packaging" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/packaging-2.png" alt="Storefront" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/packaging-3.jpg" alt="Packaging" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/packaging-4.png" alt="Storefront" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/office-1.jpg" alt="Office" className="w-full h-auto object-cover" />
-          <img src="/mr-biggs/office-2.jpg" alt="Office" className="w-full h-auto object-cover" />
-        </div>
+  {/* PACKAGING / OFFICE / STORE */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {[
+      "/mr-biggs/packaging-1.png",
+      "/mr-biggs/packaging-2.png",
+      "/mr-biggs/packaging-3.jpg",
+      "/mr-biggs/packaging-4.png",
+      "/mr-biggs/office-1.jpg",
+      "/mr-biggs/office-2.jpg",
+    ].map((src, index) => (
+      <div
+        key={index}
+        className="relative w-full aspect-[16/10] overflow-hidden"
+      >
+        <img
+          src={src}
+          alt="Brand application"
+          className="w-full h-full object-cover"
+        />
       </div>
+    ))}
+  </div>
+</div>
+
     </section>
   );
 }

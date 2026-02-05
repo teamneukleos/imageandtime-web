@@ -1,6 +1,6 @@
 import Contact from "./contact";
 
-export default function GoldenMornPage() {
+export default function ContactPage() {
   return (
     <>
         <Contact />

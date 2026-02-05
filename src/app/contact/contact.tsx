@@ -1,99 +1,131 @@
 "use client";
+
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { Instagram, Mail, X } from "lucide-react";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    company: "",
-    email: "",
-    website: "",
-    message: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    
-  };
-
   return (
-    <section className="py-20" style={{ backgroundColor: '#111111' }}>
-      <div className="max-w-6xl mx-auto px-6 mt-18">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left Content */}
+    <section className="w-full bg-[#111111] py-24">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+          {/* LEFT CONTENT */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
             viewport={{ once: true }}
+            className="space-y-8"
           >
-            <h2 className="text-3xl md:text-3xl font-bold text-white mb-6">
-              Contact Us
-            </h2>
-            <p className="text-gray-300 text-sm leading-relaxed mb-6">
-              Together we turn the blank canvas into a masterpiece, your brand into a sensation and your website into an experience
+            <span className="inline-block text-xs tracking-widest uppercase text-gray-400 border border-gray-700 rounded-lg px-4 py-2">
+              Contact
+            </span>
+
+            <h1 className="text-4xl md:text-5xl font-light text-white leading-tight">
+              Let’s Talk
+            </h1>
+
+            <p className="text-gray-400 text-base md:text-lg max-w-md">
+              Reach out for inquiries, collaborations, or just to say hello.
+              We’re eager to connect!
             </p>
+
+            {/* SOCIALS */}
+            <div className="space-y-6 pt-6">
+              <a
+                href="https://www.instagram.com/imageandtime/"
+                target="_blank"
+                className="flex items-center gap-4 text-gray-300 hover:text-white transition"
+              >
+                <span className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center">
+                  <Instagram size={18} />
+                </span>
+                <span className="text-sm tracking-wide">INSTAGRAM</span>
+              </a>
+
+              <a
+                href="mailto:info@contact.imageandtime.com"
+                className="flex items-center gap-4 text-gray-300 hover:text-white transition"
+              >
+                <span className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center">
+                  <Mail size={18} />
+                </span>
+                <span className="text-sm tracking-wide">EMAIL</span>
+              </a>
+
+              <a
+                href="https://x.com/yourhandle"
+                target="_blank"
+                className="flex items-center gap-4 text-gray-300 hover:text-white transition"
+              >
+                <span className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center">
+                  <X size={18} />
+                </span>
+                <span className="text-sm tracking-wide">X</span>
+              </a>
+            </div>
           </motion.div>
 
-          {/* Right Form */}
+          {/* RIGHT FORM */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
             viewport={{ once: true }}
+            className="bg-[#0f0f0f] border border-gray-800 p-8 md:p-10"
           >
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                name="company"
-                placeholder="Name of Company"
-                value={formData.company}
-                onChange={handleChange}
-                className="w-full px-4 py-3 bg-transparent border border-gray-500 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-red-500 transition-colors"
-                required
-              />
+            <form
+              action="mailto:oluwatosinakinbobola417@gmail.com"
+              method="POST"
+              encType="text/plain"
+              className="space-y-6"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your name"
+                    required
+                    className="w-full px-4 py-3 bg-transparent border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-white transition"
+                  />
+                </div>
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-4 py-3 bg-transparent border border-gray-500 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-red-500 transition-colors"
-                required
-              />
+                <div>
+                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your email"
+                    required
+                    className="w-full px-4 py-3 bg-transparent border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-white transition"
+                  />
+                </div>
+              </div>
 
-              <input
-                type="url"
-                name="website"
-                placeholder="Website"
-                value={formData.website}
-                onChange={handleChange}
-                className="w-full px-4 py-3 bg-transparent border border-gray-500 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-red-500 transition-colors"
-              />
-
-              <textarea
-                name="message"
-                placeholder="Message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={6}
-                className="w-full px-4 py-3 bg-transparent border border-gray-500 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-red-500 transition-colors resize-none"
-                required
-              ></textarea>
+              <div>
+                <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
+                  Message
+                </label>
+                <textarea
+                  name="Message"
+                  placeholder="Your message"
+                  rows={6}
+                  required
+                  className="w-full px-4 py-3 bg-transparent border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-white transition resize-none"
+                />
+              </div>
 
               <button
                 type="submit"
-                className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-4 rounded-lg transition-colors duration-300"
+                className="w-full bg-white text-black font-medium py-4 rounded-lg hover:bg-gray-200 transition"
               >
-                Submit
+                Send message
               </button>
             </form>
           </motion.div>
