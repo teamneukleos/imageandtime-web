@@ -18,7 +18,7 @@ const works = [
     title: " M36 Investment App",
     headline: "Banking, but for my generation",
     emotive: "This was made for me",
-    image: "/m36/m36-bg.png",
+    image: "/m36/m36card.png",
     link: "/projects/union"
   },
   {

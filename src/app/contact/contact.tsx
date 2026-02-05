@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 import { Instagram, Mail, X } from "lucide-react";
 
 export default function Contact() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    alert("Message sent! We’ll get back to you shortly.");
+  };
+
   return (
     <section className="w-full bg-[#111111] py-24">
       <div className="max-w-6xl mx-auto px-6">
@@ -66,7 +71,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* RIGHT FORM */}
+          {/* RIGHT FORM (DUMMY) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -74,12 +79,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="bg-[#0f0f0f] border border-gray-800 p-8 md:p-10"
           >
-            <form
-              action="mailto:oluwatosinakinbobola417@gmail.com"
-              method="POST"
-              encType="text/plain"
-              className="space-y-6"
-            >
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
@@ -87,7 +87,6 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    name="Name"
                     placeholder="Your name"
                     required
                     className="w-full px-4 py-3 bg-transparent border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-white transition"
@@ -100,7 +99,6 @@ export default function Contact() {
                   </label>
                   <input
                     type="email"
-                    name="Email"
                     placeholder="Your email"
                     required
                     className="w-full px-4 py-3 bg-transparent border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-white transition"
@@ -113,7 +111,6 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
-                  name="Message"
                   placeholder="Your message"
                   rows={6}
                   required
