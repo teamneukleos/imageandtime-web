@@ -149,8 +149,7 @@ export default function CreativeIdea() {
           </h2>
 
           <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Bukka Hut patterns are a vibrant extension of our brand, using food-inspired icons and cultural motifs to create a warm, recognizable identity across all touchpoints.
           </p>
         </div>
       </div>
