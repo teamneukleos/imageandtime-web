@@ -17,11 +17,11 @@ const Expertise = () => {
         {/* LEFT IMAGE */}
         <div className="relative">
           <Image
-            src="/about/team.png"
+            src="/about/team-2.png"
             alt="Image & Time Team"
             width={600}
             height={700}
-            className="object-cover w-full"
+            className="object-cover w-full rounded-md"
           />
         </div>
 
@@ -32,9 +32,9 @@ const Expertise = () => {
           </h2>
 
           <p className="text-gray-300 text-sm leading-relaxed">
-            At Image & Time, we create transformative team experiences that rebuild
-            connection, trust, and shared purpose, helping Africa's leading companies
-            grow from the inside out. Lorem ipsum dolor sit amet consectetur.
+            We help organizations unlock their full potential by creating team 
+            experiences that restore trust, deepen connection, and drive meaningful 
+            internal growth.
           </p>
 
           {/* FEATURES GRID */}

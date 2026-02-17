@@ -26,7 +26,6 @@ const OurServices = () => {
       </h2>
 
       {/* GRID */}
-      {/* GRID */}
 <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
   {services.map((service, index) => (
     <div

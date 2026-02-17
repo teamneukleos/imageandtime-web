@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+
 
 const ProjectIdea = () => {
   return (
@@ -18,52 +20,43 @@ const ProjectIdea = () => {
             Have an amazing <br /> project idea in mind?
           </h2>
 
-          {/* Email Label */}
-          <label className="text-white/80 block mb-2">Email</label>
-
-          {/* Underline Input */}
-          <input
-            type="email"
-            placeholder=""
-            className="
-              w-full bg-transparent outline-none border-b border-white/40 
-              text-white pb-1
-            "
-          />
+          
 
           {/* BUTTON */}
           <div className="mt-8">
-            <button
-              className="
-                flex items-center gap-4 bg-[#CC2027] text-white 
-                px-8 py-3 rounded-full text-sm font-medium
-                hover:bg-[#a32e30] transition
-              "
-            >
-              Book a Call
+            <Link
+  href="/contact"
+  className="
+    inline-flex items-center gap-4 bg-[#CC2027] text-white 
+    px-8 py-3 rounded-full text-sm font-medium
+    hover:bg-[#a32e30] transition
+  "
+>
+  Send an Enquiry
 
-              {/* Arrow Icon */}
-              <span
-                className="
-                  w-10 h-10 flex items-center justify-center rounded-full 
-                  bg-white text-black
-                "
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M7 17L17 7"></path>
-                  <path d="M17 17V7H7"></path>
-                </svg>
-              </span>
-            </button>
+  <span
+    className="
+      w-10 h-10 flex items-center justify-center rounded-full 
+      bg-white text-black
+    "
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="black"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M7 17L17 7"></path>
+      <path d="M17 17V7H7"></path>
+    </svg>
+  </span>
+</Link>
+
+
           </div>
         </div>
 

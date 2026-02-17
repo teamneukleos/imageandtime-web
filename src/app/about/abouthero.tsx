@@ -5,10 +5,11 @@ import { useInView, useMotionValue, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 50, suffix: "+", label: "Brands Trust us" },
-  { value: 97, suffix: "%", label: "Brands Trust us" },
-  { value: 103, suffix: "+", label: "Brands Trust us" },
+  { value: 500, suffix: "+", label: "Clients Served" },
+  { value: 97, suffix: "%", label: "Client Satisfaction" },
+  { value: 1000, suffix: "+", label: "Projects Completed" },
 ];
+
 
 const Counter = ({ value, suffix }: { value: number; suffix?: string }) => {
   const ref = useRef<HTMLSpanElement | null>(null);
