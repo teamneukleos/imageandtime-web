@@ -3,6 +3,8 @@ import Expertise from "./expertise";
 import Journey from "./journey";
 import Board from "./board";
 import Team from "./ourteam";
+import CareerHero from "./career-hero";
+import OpenPositions from "./OpenPosition";
 
 export default function HomePage() {
   return (
@@ -12,6 +14,8 @@ export default function HomePage() {
       <Journey />
       <Board />
       <Team />
+      <CareerHero />
+      <OpenPositions />
     </>
   );
 }
