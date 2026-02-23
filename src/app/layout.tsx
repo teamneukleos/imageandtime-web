@@ -1,9 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { DM_Serif_Display, DM_Sans } from 'next/font/google';
-import Navbar from './components/navbar';
-import NavbarGlow from './components/navbarglow';
-import Footer from './components/footer';
+import { ClerkProvider } from '@clerk/nextjs';
 
 const dmSerif = DM_Serif_Display({
   subsets: ['latin'],
@@ -20,36 +18,20 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: 'imageandtime',
   description: 'Image and Time, a creative agency based in Lagos, Nigeria.',
-  icons: {
-    icon: '/favicon.ico',
-}};
+  icons: { icon: '/favicon.ico' },
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <meta name="color-scheme" content="light dark" />
-      </head>
-      <body
-        className={`
-          ${dmSans.variable} ${dmSerif.variable}
-          font-sans
-          bg-white text-gray-900
-          dark:bg-[#0f172a] dark:text-gray-100
-          transition-colors duration-300
-        `}
-      >
-        <Navbar />
-        <NavbarGlow />
-        <main className="min-h-screen">
+    <ClerkProvider>
+      <html lang="en">
+        <head>
+          <meta name="color-scheme" content="light dark" />
+        </head>
+        <body className={`${dmSans.variable} ${dmSerif.variable} font-sans bg-white text-gray-900 dark:bg-[#0f172a] dark:text-gray-100 transition-colors duration-300`}>
           {children}
-        </main>
-        <Footer />
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

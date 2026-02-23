@@ -14,9 +14,9 @@ export async function sendEmail(formData: FormData) {
   }
 
   await resend.emails.send({
-    from: "General Enquiries <info@imageandtime.com>",   // must be your verified domain
-    to: "info@imageandtime.com",                          // company inbox
-    replyTo: email,                                       // ← THIS is key
+    from: "General Enquiries <info@imageandtime.com>",   
+    to: "info@imageandtime.com",                         
+    replyTo: email,                                       
     subject: `New Website Enquiry from ${name}`,
 
     text: `
@@ -32,4 +32,6 @@ ${message}
 Sent from Image & Time website contact form
     `,
   });
+
+ 
 }

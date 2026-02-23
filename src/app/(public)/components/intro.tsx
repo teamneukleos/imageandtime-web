@@ -11,7 +11,7 @@ export default function Intro() {
         {/* LEFT TEXT SECTION */}
         <div className="max-w-xl space-y-6">
           <h2 className="text-white text-2xl md:text-4xl md:mb-16 font-semibold leading-tight">
-            We are{" "}
+            We are{" "} 
             <Image
               src="/logo/logo.svg"
               alt="Image & Time full logo"
@@ -19,8 +19,10 @@ export default function Intro() {
               height={80}
               className="inline-block align-middle mx-2 w-40 md:w-56 lg:w-64"
               priority
-            />
-            , a world leading Advertising and creative agency.
+            />, <br />
+             a world leading Advertising <br />
+              and 
+            creative agency.
           </h2>
 
           {/* READ MORE BUTTON */}

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Instagram, Mail, X, CheckCircle } from "lucide-react";
-import { sendEmail } from "../actions";
+import { sendEmail } from "../../actions";
 import { useActionState } from "react"; 
 
 const initialState = { success: false, error: "" };
