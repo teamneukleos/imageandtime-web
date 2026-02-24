@@ -55,7 +55,7 @@ const servicesData = [
       "Service Design",
       "Digital Product Design"
     ],
-    image: "/services/img4.png",
+    image: "/services/img1.png",
     imagePosition: "left"
   }
 ];

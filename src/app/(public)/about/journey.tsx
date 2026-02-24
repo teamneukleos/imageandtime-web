@@ -36,7 +36,7 @@ const Journey = () => {
           <h2 className="text-xl md:text-3xl font-semibold text-white max-w-lg leading-snug">
             Our Journey: Key Points <br /> and Milestones
           </h2>
-          <p className="text-gray-300 text-sm md:text-lg max-w-md">
+          <p className="text-gray-300 text-sm md:text-lg max-w-md ">
             The Image and Time story, transforming spaces with innovative
             designs, explore the story of our creativity and Advertising
           </p>

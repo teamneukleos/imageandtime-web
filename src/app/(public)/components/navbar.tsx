@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link
             href="/contact"
             className="
-              bg-white/90 text-black px-5 py-2 rounded-xl font-medium
+              bg-white/90 text-black px-5 py-2 rounded-2xl font-medium
               flex items-center gap-2 hover:bg-white transition
             "
           >
@@ -81,7 +81,7 @@ const Navbar = () => {
             href="/contact"
             onClick={() => setOpen(false)}
             className="
-              bg-white text-black px-4 py-2 rounded-xl font-medium
+              bg-white text-black px-4 py-2 rounded-2xl font-medium
               inline-flex items-center gap-2 text-sm
             "
           >

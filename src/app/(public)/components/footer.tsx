@@ -80,14 +80,14 @@ const Footer = () => {
                   type="email"
                   required
                   placeholder="Enter your email"
-                  className="w-full px-4 py-3 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="w-full px-4 py-3 rounded-2xl bg-white text-black focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
                 {state.error && (
                   <p className="text-red-400 text-xs">{state.error}</p>
                 )}
                 <button
                   type="submit"
-                  className="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition"
+                  className="px-6 py-3 border border-white rounded-2xl hover:bg-white hover:text-black transition"
                 >
                   Subscribe
                 </button>

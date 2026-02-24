@@ -61,7 +61,7 @@ export default function AboutHero() {
 
           <a
             href="/contact"
-            className="inline-block bg-[#FF3D3D] text-white px-6 py-3 mt-8 rounded-lg font-medium hover:bg-[#e43333] transition"
+            className="inline-block bg-[#FF3D3D] text-white px-6 py-3 mt-8 rounded-2xl font-medium hover:bg-[#e43333] transition"
           >
             Get in Touch
           </a>

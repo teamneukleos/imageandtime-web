@@ -21,7 +21,7 @@ const Expertise = () => {
             alt="Image & Time Team"
             width={600}
             height={700}
-            className="object-cover w-full rounded-md"
+            className="object-cover w-full rounded-2xl"
           />
         </div>
 
