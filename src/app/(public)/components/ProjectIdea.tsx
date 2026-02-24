@@ -9,7 +9,7 @@ const ProjectIdea = () => {
     <section className="w-full px-6 md:px-14 lg:px-24 py-20 bg-[#111111] flex justify-center">
       <div
         className="
-          w-full max-w-6xl bg-[#595959] rounded-2xl 
+          w-full max-w-6xl bg-[#595959] rounded-3xl 
           p-8 md:p-12 flex flex-col md:flex-row items-center gap-10
         "
       >
@@ -61,7 +61,7 @@ const ProjectIdea = () => {
         </div>
 
         {/* RIGHT SIDE IMAGE */}
-        <div className="flex-1 w-full h-[260px] md:h-[320px] relative rounded-2xl overflow-hidden">
+        <div className="flex-1 w-full h-[260px] md:h-[320px] relative rounded-3xl overflow-hidden">
           <Image
             src="/images/project-idea.png"
             alt="Project Idea"

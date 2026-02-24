@@ -10,7 +10,7 @@ const Board = () => {
     {
       name: "Gbonju Akingbade",
       role: "Member",
-      image: "/team/gbonju.png",
+      image: "/team/gbonju-2.png",
     },
     {
       name: "Tosin Lanipekun",

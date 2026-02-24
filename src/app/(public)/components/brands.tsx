@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 const brands = [
-  { name: "Nestle", logo: "/brands/nestle.png" },
+  { name: "Nestle", logo: "/brands/nestle-2.png" },
   { name: "Seplat", logo: "/brands/seplat.png" },
   { name: "Ribena", logo: "/brands/ribena.png" },
   { name: "Goldenmorn", logo: "/brands/goldenmorn.png" },

@@ -15,7 +15,7 @@ const Team = () => {
     {
       name: "Tomisin Olabode",
       role: "Associate Creative Director",
-      image: "/team/tomisin.png",
+      image: "/team/tomisin-2.png",
     },
     {
       name: "Sidney Uzor",
