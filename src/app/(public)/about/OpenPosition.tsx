@@ -1,5 +1,6 @@
 import { db } from "../../lib/db";
 import OpenPositionsClient from "./OpenPositionsClient";
+import type { Job } from "@prisma/client";
 
 export default async function OpenPositions() {
   const jobs = await db.job.findMany({
@@ -7,7 +8,7 @@ export default async function OpenPositions() {
     orderBy: { createdAt: "desc" },
   });
 
-  const serialized = jobs.map((job) => ({
+  const serialized = jobs.map((job: Job) => ({  
     ...job,
     createdAt: job.createdAt.toISOString().split("T")[0],
   }));

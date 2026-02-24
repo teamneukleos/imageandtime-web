@@ -21,7 +21,7 @@ const servicesData = [
       "Content Marketing & Storytelling",
       "Performance Marketing & Analytics"
     ],
-    image: "/services/img1.png",
+    image: "/services/img5.png",
     imagePosition: "left"
   },
   {
