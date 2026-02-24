@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { db } from "../../lib/db";
 import OpenPositionsClient from "./OpenPositionsClient";
 import type { Job } from "@prisma/client";

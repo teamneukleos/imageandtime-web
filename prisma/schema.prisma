@@ -4,6 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+
   
 }
 
@@ -17,3 +18,21 @@ model Job {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
+
+/// User model (for authors, admins, clients)
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String   // hash
+  role      String     @default("USER") // ADMIN, EDITOR
+  is_inbuilt Boolean  @default(false) // true for seeded users
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+ enum Role {
+   ADMIN
+   EDITOR
+   USER
+ }
