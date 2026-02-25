@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useClerk } from "@clerk/nextjs";
+import { signOut } from "next-auth/react";
 import { createJob, updateJob, deleteJob, toggleJob } from "@/app/admin/action";
 
 type Job = {
@@ -29,7 +29,6 @@ type Toast = {
 const emptyForm: FormState = { title: "", type: "Full-time", location: "", description: "" };
 
 export default function AdminDashboardClient({ jobs: initialJobs }: { jobs: Job[] }) {
-  const { signOut } = useClerk();
   const [jobs, setJobs] = useState<Job[]>(initialJobs);
   const [form, setForm] = useState<FormState>(emptyForm);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -325,7 +324,7 @@ export default function AdminDashboardClient({ jobs: initialJobs }: { jobs: Job[
         </button>
         <button
           className="nav-item"
-          onClick={() => signOut({ redirectUrl: "/admin/sign-in" })}
+          onClick={() => signOut({ callbackUrl: "/admin/sign-in" })}
           style={{ marginTop: "auto", color: "#444" }}
         >
           <span>→</span> Sign out
