@@ -2,8 +2,11 @@ import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { db } from "./app/lib/db";
 import bcrypt from "bcryptjs";
+import { authConfig } from "./auth.config";
 
+// Full config with providers for API routes (Node.js runtime only)
 export const { auth, signIn, signOut, handlers } = NextAuth({
+  ...authConfig,
   providers: [
     Credentials({
       name: "Credentials",
@@ -52,29 +55,6 @@ export const { auth, signIn, signOut, handlers } = NextAuth({
       },
     }),
   ],
-  callbacks: {
-    async jwt({ token, user }) {
-      if (user) {
-        token.id = (user as any).id;
-        (token as any).role = (user as any).role;
-      }
-      return token;
-    },
-    async session({ session, token }) {
-      if (session.user) {
-        (session.user as any).id = (token as any).id;
-        (session.user as any).role = (token as any).role;
-      }
-      return session;
-    },
-  },
-  pages: {
-    signIn: "/admin/sign-in",
-  },
-  session: {
-    strategy: "jwt",
-  },
-  secret: process.env.AUTH_SECRET || process.env.NEXTAUTH_SECRET,
   // Helpful while debugging
   debug: process.env.NODE_ENV === "development",
 });
