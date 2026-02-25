@@ -1,10 +1,14 @@
-import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import { NextResponse } from "next/server";
+import { auth } from "@/auth";
 
-const isAdminRoute = createRouteMatcher(["/admin/dashboard(.*)"]);
-
-export default clerkMiddleware(async (auth, req) => {
-  if (isAdminRoute(req)) {
-    await auth.protect();
+export default auth((req) => {
+  const { pathname } = req.nextUrl;
+  
+  // Protect admin dashboard routes
+  if (pathname.startsWith("/admin/dashboard")) {
+    if (!req.auth) {
+      return NextResponse.redirect(new URL("/admin/sign-in", req.url));
+    }
   }
 });
 

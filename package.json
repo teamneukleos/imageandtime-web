@@ -6,16 +6,30 @@
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed": "prisma db seed -- --environment production",
+    "seed:dev": "dotenv -e .env.dev -- prisma db seed -- --environment development",
+    "seed:staging": "dotenv -e .env.staging -- prisma db seed -- --environment development",
+    "seed:prod": "dotenv -e .env.prod -- prisma db seed -- --environment production",
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev",
+    "migrate:status": "prisma migrate status",
+    "migrate:reset": "prisma migrate reset",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:deploy:dev": "dotenv -e .env.dev -- prisma migrate deploy",
+    "migrate:deploy:staging": "dotenv -e .env.staging -- prisma migrate deploy",
+    "migrate:reset:staging": "dotenv -e .env.staging -- prisma migrate reset"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.38.1",
+    "@auth/prisma-adapter": "^2.7.2",
     "@prisma/adapter-pg": "^7.4.1",
     "@prisma/client": "^7.4.1",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^17.3.1",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.554.0",
     "next": "^16.0.7",
+    "next-auth": "^5.0.0-beta.25",
     "pg": "^8.18.0",
     "prisma": "^7.4.1",
     "react": "19.2.0",
@@ -24,6 +38,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/pg": "^8.16.0",
     "@types/react": "^19",
@@ -31,6 +46,10 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
     "tailwindcss": "^4",
+    "tsx": "^4.19.2",
     "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
