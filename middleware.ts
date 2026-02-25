@@ -13,5 +13,15 @@ export default auth((req) => {
 });
 
 export const config = {
-  matcher: ["/((?!_next|.*\\..*).*)"],
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api/auth (NextAuth routes - these need Node.js runtime)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - public files (public folder)
+     */
+    "/((?!api/auth|_next/static|_next/image|favicon.ico|.*\\..*).*)",
+  ],
 };
