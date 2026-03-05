@@ -2,7 +2,6 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { DM_Serif_Display, DM_Sans } from 'next/font/google';
 
-
 const dmSerif = DM_Serif_Display({
   subsets: ['latin'],
   weight: ['400'],
@@ -23,15 +22,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    
-      <html lang="en">
-        <head>
-          <meta name="color-scheme" content="light dark" />
-        </head>
-        <body className={`${dmSans.variable} ${dmSerif.variable} font-sans bg-white text-gray-900 dark:bg-[#0f172a] dark:text-gray-100 transition-colors duration-300`}>
-          {children}
-        </body>
-      </html>
-    
+    <html lang="en">
+      <head>
+        <meta name="color-scheme" content="light dark" />
+      </head>
+      <body className={`${dmSans.variable} ${dmSerif.variable} font-sans bg-white text-gray-900 dark:bg-[#0f172a] dark:text-gray-100 transition-colors duration-300`}>
+        {children}
+      </body>
+    </html>
   );
 }
