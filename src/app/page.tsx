@@ -3,9 +3,8 @@ import NavbarGlow from './(public)/components/navbarglow';
 import Hero from './(public)/components/hero';
 import Intro from './(public)/components/intro';
 
-import OurServices from './(public)/components/ourservices';
 import Brands from './(public)/components/brands';
-import ProjectIdea from './(public)/components/ProjectIdea';
+import Awards from './(public)/components/award';
 import Footer from './(public)/components/footer';
 
 export default function HomePage() {
@@ -17,9 +16,9 @@ export default function HomePage() {
       
       <Intro />
       
-      <OurServices />
+      
       <Brands />
-      <ProjectIdea />
+      <Awards />
       <Footer />
     </>
   );

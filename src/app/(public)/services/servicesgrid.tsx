@@ -7,6 +7,7 @@ import Link from "next/link";
 const servicesData = [
   {
     id: 1,
+    link: "/advertising",
     label: "Advertising & Marketing",
     title: "Campaigns that captivate and convert",
     description: [
@@ -26,6 +27,7 @@ const servicesData = [
   },
   {
     id: 2,
+    link: "/brand-identity",
     label: "Brand identity & Product design",
     title: "Building brands that resonate and endure",
     description: [
@@ -43,6 +45,7 @@ const servicesData = [
   },
   {
     id: 3,
+    link: "/services/experience-design",
     label: "EXPERIENCE DESIGN",
     title: "Creating experiences that engage and inspire",
     description: [
@@ -138,10 +141,10 @@ const ServicesGrid = () => {
 
               <div className="pt-8">
                 <Link
-                  href="/contact"
+                  href={service.link}
                   className="inline-block bg-white text-black px-8 py-4 rounded-md font-medium hover:bg-gray-200 transition-colors"
                 >
-                  Get started
+                  See more
                 </Link>
               </div>
             </div>

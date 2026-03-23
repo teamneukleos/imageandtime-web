@@ -1,6 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { DM_Serif_Display, DM_Sans } from 'next/font/google';
+import CursorGlow from './(public)/components/CursorGlow';
+import SmoothScroll from './(public)/components/SmoothScroll';
 
 const dmSerif = DM_Serif_Display({
   subsets: ['latin'],
@@ -27,7 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="color-scheme" content="light dark" />
       </head>
       <body className={`${dmSans.variable} ${dmSerif.variable} font-sans bg-white text-gray-900 dark:bg-[#0f172a] dark:text-gray-100 transition-colors duration-300`}>
-        {children}
+        <CursorGlow />
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );

@@ -7,11 +7,16 @@ import Link from "next/link";
 export default function Intro() {
   return (
     <section className="w-full bg-[#111111] py-24">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-12">
+      {/*
+        Use the same px-6 md:px-8 as the hero and navbar — no max-w wrapper
+        that shifts the content independently on wider screens.
+      */}
+      <div className="flex items-center justify-between px-6 md:px-8">
+
         {/* LEFT TEXT SECTION */}
         <div className="max-w-xl space-y-6">
           <h2 className="text-white text-2xl md:text-4xl md:mb-16 font-semibold leading-tight">
-            We are{" "} 
+            We are{" "}
             <Image
               src="/logo/logo.svg"
               alt="Image & Time full logo"
@@ -20,9 +25,8 @@ export default function Intro() {
               className="inline-block align-middle mx-2 w-40 md:w-56 lg:w-64"
               priority
             />, <br />
-             a world leading Advertising <br />
-              and 
-            creative agency.
+            a world leading Advertising <br />
+            and creative agency.
           </h2>
 
           {/* READ MORE BUTTON */}
@@ -54,14 +58,15 @@ export default function Intro() {
           </Link>
         </div>
 
-        {/* RIGHT LOGO (SVG) */}
-        <div className="hidden lg:block">
+        {/* RIGHT LOGO */}
+        <div className="hidden lg:block shrink-0">
           <img
             src="/logo/and-logo.svg"
             alt="Image & Time Symbol"
             className="w-[280px] h-auto"
           />
         </div>
+
       </div>
     </section>
   );
