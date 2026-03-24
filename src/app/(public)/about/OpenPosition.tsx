@@ -8,9 +8,9 @@ export default async function OpenPositions() {
   const jobs = await db.job.findMany({
     where: { active: true },
     orderBy: { createdAt: "desc" },
-  });
+  }).catch(() => [] as Job[]);
 
-  const serialized = jobs.map((job: Job) => ({  
+  const serialized = jobs.map((job: Job) => ({
     ...job,
     createdAt: job.createdAt.toISOString().split("T")[0],
   }));

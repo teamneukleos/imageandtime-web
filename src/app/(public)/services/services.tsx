@@ -22,7 +22,7 @@ export default function Services() {
           <div className="md:col-span-4">
             <h2 className="text-2xl md:text-2xl lg:text-3xl font-light text-white leading-tight">
               Tailored solutions <br />
-              for bussiness <br />
+              for business <br />
               excellence
             </h2>
           </div>
