@@ -116,7 +116,7 @@ function FeaturedVideo({ campaign }: { campaign: FeaturedCampaign }) {
           muted
           playsInline
           loop
-          preload="metadata"
+          preload="auto"
           className={`w-full h-full object-cover transition-transform duration-700 ease-out ${isHovered ? "scale-[1.02]" : "scale-100"
             }`}
         />
@@ -166,7 +166,7 @@ function GridCard({ campaign }: { campaign: GridCampaign }) {
             muted
             playsInline
             loop
-            preload="metadata"
+            preload="auto"
             className={`w-full h-full object-cover transition-transform duration-700 ease-out ${isHovered ? "scale-[1.03]" : "scale-100"
               }`}
           />
