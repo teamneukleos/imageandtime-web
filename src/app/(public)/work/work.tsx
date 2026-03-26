@@ -81,7 +81,7 @@ function useHoverVideo() {
   const ref = useRef<HTMLVideoElement>(null);
 
   const onMouseEnter = useCallback(() => {
-    ref.current?.play().catch(() => {});
+    ref.current?.play().catch(() => { });
   }, []);
 
   const onMouseLeave = useCallback(() => {
@@ -117,9 +117,8 @@ function FeaturedVideo({ campaign }: { campaign: FeaturedCampaign }) {
           playsInline
           loop
           preload="metadata"
-          className={`w-full h-full object-cover transition-transform duration-700 ease-out ${
-            isHovered ? "scale-[1.02]" : "scale-100"
-          }`}
+          className={`w-full h-full object-cover transition-transform duration-700 ease-out ${isHovered ? "scale-[1.02]" : "scale-100"
+            }`}
         />
       </Link>
 
@@ -139,7 +138,7 @@ function FeaturedVideo({ campaign }: { campaign: FeaturedCampaign }) {
   );
 }
 
-// ─── Grid card
+// Grid card
 
 function GridCard({ campaign }: { campaign: GridCampaign }) {
   const { ref, onMouseEnter, onMouseLeave } = useHoverVideo();
@@ -164,21 +163,19 @@ function GridCard({ campaign }: { campaign: GridCampaign }) {
             ref={ref}
             src={campaign.videoSrc}
             poster={campaign.posterSrc}
+            muted
             playsInline
             loop
             preload="metadata"
-            className={`w-full h-full object-cover transition-transform duration-700 ease-out ${
-              isHovered ? "scale-[1.03]" : "scale-100"
-            }`}
+            className={`w-full h-full object-cover transition-transform duration-700 ease-out ${isHovered ? "scale-[1.03]" : "scale-100"
+              }`}
           />
         ) : (
-          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={campaign.imageSrc}
             alt={campaign.title}
-            className={`w-full h-full object-cover transition-transform duration-700 ease-out ${
-              isHovered ? "scale-[1.03]" : "scale-100"
-            }`}
+            className={`w-full h-full object-cover transition-transform duration-700 ease-out ${isHovered ? "scale-[1.03]" : "scale-100"
+              }`}
           />
         )}
       </Link>
@@ -197,15 +194,15 @@ function GridCard({ campaign }: { campaign: GridCampaign }) {
   );
 }
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// Page 
 
 export default function Work() {
   return (
     <main className="min-h-screen bg-[#111111]">
 
-      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      {/* Hero*/}
       <section className="px-6 md:px-8 pt-28 pb-16">
-       <h1 className="font-black leading-[0.92] tracking-tight mb-10 text-white text-[2rem] sm:text-[2.75rem] md:text-[4.5rem] lg:text-[6.5rem] xl:text-[8.5rem]">          
+        <h1 className="font-black leading-[0.92] tracking-tight mb-10 text-white text-[2rem] sm:text-[2.75rem] md:text-[4.5rem] lg:text-[6.5rem] xl:text-[8.5rem]">
           We Make Ideas <br />
           People Actually <br />
           Care About.
@@ -214,24 +211,24 @@ export default function Work() {
         <div className="max-w-2xl space-y-5">
           <p className="text-base leading-relaxed text-white/70">
             We create work that connects — not just visually, but emotionally.
-  From campaigns that spark conversations to ideas that live beyond the screen,
-  everything we do is built around people first.
+            From campaigns that spark conversations to ideas that live beyond the screen,
+            everything we do is built around people first.
           </p>
           <p className="text-base leading-relaxed text-white">
             This is a collection of the stories we’ve helped shape, the brands we’ve
-  partnered with, and the impact we’ve created along the way.
+            partnered with, and the impact we’ve created along the way.
           </p>
         </div>
       </section>
 
-      {/* ── Featured Campaign ─────────────────────────────────────────────── */}
+      {/*Featured Campaign */}
       <div className="px-6 md:px-8 space-y-24">
-         {featuredCampaigns.map((campaign) => (
-         <FeaturedVideo key={campaign.id} campaign={campaign} />
+        {featuredCampaigns.map((campaign) => (
+          <FeaturedVideo key={campaign.id} campaign={campaign} />
         ))}
       </div>
 
-      {/* ── Campaign Grid ──────────────────────────────────────────────────── */}
+      {/* Campaign Grid */}
       <section className="px-6 md:px-8 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6">
           {gridCampaigns.map((c) => (
