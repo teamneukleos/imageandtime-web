@@ -29,7 +29,7 @@ const featuredCampaigns: FeaturedCampaign[] = [
     id: "Haier-thermocool",
     client: "Haier Thermocool",
     title: "Always there for you",
-    videoSrc: "/videos/haier-thermocool.mp4",
+    videoSrc: "https://res.cloudinary.com/dapgo2xqv/video/upload/q_auto,f_auto/haier-thermocool_l6jmh6.mp4",
     posterSrc: "/haier-thermocool/thumbnail.png",
     href: "/projects/haier-thermocool",
   },
@@ -37,7 +37,7 @@ const featuredCampaigns: FeaturedCampaign[] = [
     id: "Union-bank",
     client: "Union Bank",
     title: "Enabling Success",
-    videoSrc: "/videos/union-bank.mp4",
+    videoSrc: "https://res.cloudinary.com/dapgo2xqv/video/upload/q_auto,f_auto/union-bank_s3eirz.mp4",
     posterSrc: "/union/thumbnail.png",
     href: "/projects/union-bank",
   },
@@ -80,8 +80,18 @@ const gridCampaigns: GridCampaign[] = [
 function useHoverVideo() {
   const ref = useRef<HTMLVideoElement>(null);
 
+
   const onMouseEnter = useCallback(() => {
-    ref.current?.play().catch(() => { });
+    const video = ref.current;
+    if (!video) return;
+
+    if (video.readyState >= 2) {
+      video.play().catch(() => { });
+    } else {
+      video.addEventListener("canplay", () => {
+        video.play().catch(() => { });
+      }, { once: true });
+    }
   }, []);
 
   const onMouseLeave = useCallback(() => {
