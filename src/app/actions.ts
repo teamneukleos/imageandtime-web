@@ -2,7 +2,7 @@
 
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_fG1dPfmi_ALPoxQxU6CLeyPgDDemXyWLX");
 
 export async function sendEmail(formData: FormData) {
   const name = formData.get("name") as string;
@@ -14,9 +14,9 @@ export async function sendEmail(formData: FormData) {
   }
 
   await resend.emails.send({
-    from: "General Enquiries <info@imageandtime.com>",   
-    to: "info@imageandtime.com",                         
-    replyTo: email,                                       
+    from: "General Enquiries <info@imageandtime.com>",
+    to: "info@imageandtime.com",
+    replyTo: email,
     subject: `New Website Enquiry from ${name}`,
 
     text: `
@@ -33,5 +33,5 @@ Sent from Image & Time website contact form
     `,
   });
 
- 
+
 }
