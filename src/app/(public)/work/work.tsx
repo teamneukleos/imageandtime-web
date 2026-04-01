@@ -113,24 +113,25 @@ function FeaturedVideo({ campaign }: { campaign: FeaturedCampaign }) {
   return (
     <div className="w-full">
       {/* Full-bleed video */}
-      <Link
-        href={campaign.href}
+      <div
         className="block w-full overflow-hidden relative aspect-[16/9] md:h-[70vh] lg:h-[90vh]"
         onMouseEnter={() => { setIsHovered(true); onMouseEnter(); }}
         onMouseLeave={() => { setIsHovered(false); onMouseLeave(); }}
       >
-        <video
-          ref={ref}
-          src={campaign.videoSrc}
-          poster={campaign.posterSrc}
-          muted
-          playsInline
-          loop
-          preload="auto"
-          className={`w-full h-full object-cover transition-transform duration-700 ease-out ${isHovered ? "scale-[1.02]" : "scale-100"
-            }`}
-        />
-      </Link>
+        <Link href={campaign.href} className="block w-full h-full">
+          <video
+            ref={ref}
+            src={campaign.videoSrc}
+            poster={campaign.posterSrc}
+            muted
+            playsInline
+            loop
+            preload="auto"
+            className={`w-full h-full object-cover transition-transform duration-700 ease-out ${isHovered ? "scale-[1.02]" : "scale-100"
+              }`}
+          />
+        </Link>
+      </div>
 
       {/* Caption row */}
       <div className="flex items-start justify-between pt-4 pb-10 border-t ">
